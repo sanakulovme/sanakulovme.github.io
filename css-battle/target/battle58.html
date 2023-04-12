@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 58</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--aqua: #4f77ff;
+        	--box: #191919;
+            --yellow: #f9e492;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 140px;
+        	height: 210px;
+        	position: relative;
+        }
+        .bottom{
+        	width: 140px;
+        	height: 100px;
+        	/*border: 1px solid #000;*/
+        	position: absolute;
+        	bottom: 0;
+        }
+        .b1{
+        	width: 20px;
+        	height: 100px;
+        	background: var(--yellow);
+        	margin: 0 auto;
+        	border-bottom-left-radius: 10px;
+        	border-bottom-right-radius: 10px;
+        	display: flex;
+        	justify-content: start;
+        	align-items: start;
+        }
+        .b2{
+        	width: 40px;
+        	height: 40px;
+        	border-radius: 50%;
+        	background: var(--yellow);
+        	margin: 0 auto;
+        	position: relative;
+        	top: -110px;
+        }
+        .top{
+        	width: 140px;
+        	height: 110px;
+        	/*border: 1px solid #000;*/
+        	position: relative;
+        }
+        .t1{
+        	width: 100px;
+        	height: 50px;
+        	background: var(--aqua);
+        	margin: 0 auto;
+        	/*border-top: 10px solid var(--box);*/
+        	border-bottom-left-radius: 100px;
+        	border-bottom-right-radius: 100px;
+        	position: absolute;
+        	bottom: -10px;
+        	left: 20px;
+        	z-index: 33;
+        }
+        .t2{
+        	width: 140px;
+        	height: 80px;
+        	/*border: 1px solid #000;*/
+        	position: absolute;
+        	bottom: 30px;
+        	background: var(--box);
+        	z-index: 55;
+        }
+        .t3{
+        	width: 140px;
+        	height: 30px;
+        	/*border: 1px solid #000;*/
+        	position: absolute;
+        	bottom: 10px;
+        	border-top-left-radius: 20px;
+        	border-top-right-radius: 20px;
+        	border-bottom-left-radius: 100px;
+        	border-bottom-right-radius: 100px;
+        	background: var(--aqua);
+        }
+        .t4{
+        	width: 115px;
+        	height: 30px;
+        	background: var(--box);
+        	margin: 0 auto;
+        	position: absolute;
+        	border-bottom-left-radius: 100px;
+        	border-bottom-right-radius: 100px;
+        	top: -10px;
+        	left: 12px;
+        }
+        .t5{
+        	width: 100px;
+        	height: 30px;
+        	background: var(--aqua);
+        	margin: 0 auto;
+        	position: relative;
+        	top: -10px;
+        	border-bottom-left-radius: 100px;
+        	border-bottom-right-radius: 100px;
+        	border-top-left-radius: 20px;
+        	border-top-right-radius: 20px;
+        }
+        .t6{
+        	width: 46px;
+        	height: 40px;
+        	border-radius: 50%;
+        	background: var(--box);
+        	margin: 0 auto;
+        	position: relative;
+        	top: -20px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .t7{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 50%;
+        	background: var(--aqua);
+        	position: relative;
+        	top: -5px;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="top">
+					<div class="t2">
+						<div class="t3">
+							<div class="t4">
+								<div class="t5">
+									<div class="t6">
+										<div class="t7"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="t1"></div>
+				</div>
+				<div class="bottom">
+					<div class="b1">
+					</div>
+					<div class="b2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

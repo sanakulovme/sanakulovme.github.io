@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 45</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background: rgba(26, 67, 65);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 270px;
+        	height: 300px;
+        }
+        .sm1{
+        	width: 270px;
+        	height: 210px;
+        	display: flex;
+        	justify-content: space-between;
+        	position: relative;
+        }
+        .col1, .col3{
+        	width: 30px;
+        	height: 210px;
+        	background: #f3ac3c;
+        }
+        .col2{
+        	width: 270px;
+        	height: 30px;
+        	background: #555;
+        	position: absolute;
+        	bottom: 0;
+        	background: #f3ac3c;
+        }
+
+        .sm2{
+        	width: 150px;
+        	height: 150px;
+        	display: flex;
+        	justify-content: space-between;
+        	position: relative;
+        }
+
+        .col4, .col6{
+        	width: 30px;
+        	height: 150px;
+        	background: #998235;
+        }
+        .col5{
+        	width: 150px;
+        	height: 30px;
+        	background: #998235;
+        	position: absolute;
+        	bottom: 0;
+        }
+        .col7{
+        	width: 30px;
+        	height: 300px;
+        	background: #f3ac3c;
+        	z-index: 999;
+        }
+
+        .col8{
+        	width: 270px;
+        	height: 30px;
+        	background: #998235;
+        	position: relative;
+        	top: 30px;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="sm1">
+					<div class="col1"></div>
+					<div class="sm2">
+						<div class="col4"></div>
+						<div class="col7"></div>
+						<div class="col5"></div>
+						<div class="col6"></div>
+					</div>
+					<div class="col2"></div>
+					<div class="col3"></div>
+				</div>
+				<div class="col8"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

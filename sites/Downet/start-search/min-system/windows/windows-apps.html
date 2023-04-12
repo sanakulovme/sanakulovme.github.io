@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DowNet | Windows ilovalari</title>
+	<!-- For min icon | local image -->
+	<link rel="icon" href="images/winlogo.jpg">
+	<!-- For style | bootstrap local file -->
+	<link rel="stylesheet" href="../../../bootstrap-file/css/bootstrap.min.css">
+	<!-- For icons | font awesome online link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		:root{
+			--min-font: "Lucida sans";
+		}
+
+		.min-coontainer{
+			width: 100%;
+			height: auto;
+		}
+		.min-navbar{
+			width: 100%;
+			height: 25vh;
+			border-bottom: 1px solid #000;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		.min-navbar a{
+			text-decoration: none;
+		}
+		.min-apps-box{
+			width: 100%;
+			min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            min-height: calc(75vh - 10px);
+		}
+		.apps-row{
+			width: 100%;
+			height: 50vh;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.app-box{
+			width: 250px;
+			height: 310px;
+			background-color: #fff;
+			background-color: rgba(23,27,31,var(--bs-bg-opacity,1))!important;
+			border-radius: 15px;
+			text-align: center;
+            margin: 10px;
+		}
+
+		.app-box a{
+			text-decoration: none;
+			color: #000;
+			padding: 5px;
+			border-radius: 20px;
+		}
+		.app-box-top{
+			display: flex;
+			justify-content: center;
+
+		}
+		.win{
+			color: #000;
+		}
+		.you{
+			color: #f00;
+			border-left: 1px solid #000;
+			padding-left: 5px;
+		}
+		.app-box img{
+			width: 100px;
+			height: 110px;
+		}
+		.app-box p a{
+			display: inline-block;
+			width: 80%;
+			font-family: var(--min-font);
+		}
+
+		.search{
+			background-color: rgba(255, 255, 255, 0.4);
+			z-index: -1;
+		}
+		.search-box{
+			width: 200px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		input{
+			outline: none;
+			border-radius: 10px;
+			border: 1px solid #fff;
+		}
+		input:focus{
+			border: none;
+			box-shadow: 2px 2px 10px 2px #000;
+		}
+		.search-box input{
+			width: 250px;
+			height: 40px;
+			text-align: center;
+		}
+		.search-box input[placeholder]{
+				font-size: 0.8em;
+			}
+			.atom{
+				border-radius: 40%;
+				margin-top: 5px;
+			}
+
+			.min-navbar a img{
+				width: 40px;
+				height: 40px;
+			}
+
+		@media screen and (max-width: 425px){	
+			.min-navbar{
+				flex-direction: column;
+			}
+			.apps-row{
+				flex-direction: column;
+				height: auto;
+			}
+			.app-box{
+				width: 60%;
+				height: auto;
+				margin-bottom: 10px;
+			}
+			.search-box input{
+				width: 200px;
+				height: 34px;
+			}
+
+		}
+		@media screen and (max-width: 768px){
+			.apps-row{
+				flex-wrap: wrap;
+				height: auto;
+				margin-bottom: 10px;
+			}
+			.app-box{
+				margin: 5px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="min-coontainer text-bg-dark">
+		<div class="min-navbar">
+			<a href="../../filter-system.html" class="h1 text-light"><img src="./images/icon_arrow_back.svg" alt="Orqaga"></a>
+			<a href="../../../index.html" class="h1" title="Bosh sahifaga qaytish"><i class="fa fa-home text-light"></i></a>
+			<div class="search-box">
+				<input type="search" placeholder="Qanday ilova izlayapsiz?" class="search-input"><i class="fa fa-search m-1"></i>
+			</div>
+			<p class="h3"><span class="text-primary">Windows <i class="fa fa-windows"></i></span> ilovalar</p>
+		</div>
+		<div class="min-apps-box">
+            <div class="app-box">
+                <div class="app-box-top">
+                    <img src="images/aimp.png" alt="AIMP">
+                </div>
+                <p class="app-box-name">AIMP</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>775 MB</p>
+                <p><a href="info/aimp.html" class="text-bg-dark">BATAFSIL</i></a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/pycharm.png" alt="">
+                </div>
+                <p class="app-box-name">PyCharm</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>1.44 GB </p>
+                <p><a href="info/pycharm.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/scout.png" alt="">
+                </div>
+                <p class="app-box-name">Scout App</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>83.5 MB</p>
+                <p><a href="info/scoutapp.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/sublime.png" alt="">
+                </div>
+                <p class="app-box-name">Sublime Text</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>94.3 MB</p>
+                <p><a href="info/sublime-text.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/telegram.png" alt="">
+                </div>
+                <p class="app-box-name">Telegram Desktop</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>121.6 MB</p>
+                <p><a href="info/telegram.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/visual.png" alt="">
+                </div>
+                <p class="app-box-name">Visual Studio</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>326 MB</p>
+                <p><a href="info/visual.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/atom.jpg" class="atom" alt="">
+                </div>
+                <p class="app-box-name">Atom</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>256 MB</p>
+                <p><a href="info/atom.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+            <div class="app-box">
+                <div class="app-top-box">
+                    <img src="images/notepad.jpg" class="atom" alt="">
+                </div>
+                <p class="app-box-name">Notepad + +</p>
+                <P>WINDOWS <i class="fa fa-windows win"></i></P>
+                <p>146 MB</p>
+                <p><a href="info/notepad.html" class="text-bg-dark">BATAFSIL</a></p>
+            </div>
+		</div>
+	</div>
+
+
+	<script src="search.js"></script>
+
+</body>
+</html>

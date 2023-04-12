@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 62</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--while: #fff58f;
+        	--box: #191919;
+            --yellow-1: #f2ad43;
+            --yellow-2: #e08027;
+            --yellow-3: #824b20;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 150px;
+        	height: 200px;
+        	background: var(--yellow-1);
+        	border-top-left-radius: 100px;
+        	border-top-right-radius: 100px;
+        	border-bottom-right-radius: 30px;
+        	border-bottom-left-radius: 30px;
+        	position: relative;
+        	overflow: hidden;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .r1{
+        	width: 200px;
+        	height: 200px;
+        	background: var(--yellow-2);
+        	border-radius: 50%;
+        	position: absolute;
+        	bottom: -100px;
+        	left: -100px;
+        	z-index: 2;
+        }
+        .r2{
+        	width: 200px;
+        	height: 200px;
+        	background: var(--yellow-3);
+        	border-radius: 50%;
+        	position: absolute;
+        	bottom: -100px;
+        	right: -100px;
+        	z-index: 3;
+        }
+        .r3{
+        	width: 60px;
+        	height: 60px;
+        	border-radius: 50%;
+        	background: var(--while);
+        	position: relative;
+        	top: 20px;
+        	z-index: 1;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="r1"></div>
+				<div class="r2"></div>
+				<div class="r3"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body{
+/*	border: 1px solid #fff;*/
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		width: 85%;
+	}
+	nav .container{
+		width: 70% !important;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+	}
+	.navbar{
+		margin-right: 0;
+	}
+	.logo{
+		margin-right: 0;
+	}
+	.navbar{
+		flex-direction: column;
+	}
+	.fa-close{
+		display: inline-block;
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		color: var(--pimary-color);
+		transform: rotate(0);
+		transition: all 0.4s;
+	}
+	.fa-navicon{
+		display: inline-block;
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		color: var(--pimary-color);
+		transform: rotate(180deg);
+		transition: all 0.4s;
+	}
+	.close{
+		height: 10px;
+		overflow: hidden;
+		transition: all 0.4s;
+	}
+	nav{
+		transition: all 0.4s;
+		height: 0;
+		overflow: hidden;
+	}
+	.content .container, .courses .container{
+		flex-direction: column;
+	}
+	.content_right{
+		display: none;
+	}
+	.courses, .courses_right{
+		height: auto;
+		margin-left: 0;
+	}
+	.popular .container{
+		flex-direction: column-reverse;
+	}
+	.popular_left{
+		margin-right: 0;
+		margin-top: 50px;
+	}
+	.popular_right{
+		justify-content: start;
+	}
+	.watch .container{
+		flex-direction: column;
+	}
+	.watch_right{
+		padding-top: 0;
+		margin-left: 0;
+	}
+	.client .container{
+		width: 100%;
+	}
+	.client_row{
+		overflow-y: hidden;
+    	overflow-x: scroll;
+    	width: 100%;
+	}
+	.faq_row{
+		width: 100%;
+	}
+	.faq, footer{
+		height: auto;
+	}
+	.footer_row_1{
+		flex-wrap: wrap;
+	}
+
+}
+
+@media screen and (max-width: 425px){
+	.c_left_h1{
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.content_left, .courses_left, .popular_left, .watch_left img, .watch_right{
+		width: 100%;
+	}
+	.c_left_btn_1{
+		margin-right: 0;
+	}
+	.courses_left img:nth-child(1){
+		width: 100%;
+	}
+	.popular{
+		height: auto;
+	}
+	.p_col_3{
+		margin-left: 0;
+		margin-top: 50px;
+	}
+	.popular_right{
+		flex-direction: column;
+	}
+	.courses_right h1, .popular_left h1, .watch_right h1{
+		font-size: 30px;
+	}
+	.client_top{
+		padding: 0 30px;
+	}
+	.edu_row{
+		overflow-y: hidden;
+    	overflow-x: scroll;
+	}
+	.input{
+		width: 100%;
+	}
+	.input input{
+		width: 100%;
+	}
+	.footer_row_2 .container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}

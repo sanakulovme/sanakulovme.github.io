@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Battle 18</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: rgba(92, 67, 76);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            padding: 10px;
+        }
+        
+        .row {
+            width: 100%;
+            height: 85px;
+            /*border: 1px solid #000;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .col {
+            width: 80px;
+            height: 80px;
+            /*border: 1px solid #000;*/
+            border-top-left-radius: 100%;
+        }
+        
+        .yellow {
+            background: rgb(240, 148, 98);
+        }
+        
+        .white {
+            background: rgb(245, 214, 180);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col yellow"></div>
+                <div class="col white"></div>
+                <div class="col yellow"></div>
+                <div class="col white"></div>
+            </div>
+            <div class="row">
+                <div class="col white"></div>
+                <div class="col yellow"></div>
+                <div class="col white"></div>
+                <div class="col yellow"></div>
+            </div>
+            <div class="row">
+                <div class="col yellow"></div>
+                <div class="col white"></div>
+                <div class="col yellow"></div>
+                <div class="col white"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <input type="color"> -->
+</body>
+
+</html>

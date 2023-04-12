@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battel 29</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .contaiener{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background: rgba(243, 172, 60);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sm{
+        	width: 200px;
+        	height: 200px;
+            background: rgba(26, 67, 65);
+            position: relative;
+            overflow: hidden;
+        }
+        .col1{
+        	width: 200px;
+        	height: 200px;
+        	border-radius: 50%;
+            background: rgba(243, 172, 60);
+        	position: absolute;
+        	top: -100px;
+        	left: -100px;
+        }
+        .col2{
+        	width: 200px;
+        	height: 200px;
+        	border-radius: 50%;
+            background: rgba(243, 172, 60);
+        	position: absolute;
+        	top: -100px;
+        	left: 100px;
+        }
+
+        .col3{
+        	width: 200px;
+        	height: 200px;
+        	border-radius: 50%;
+            background: rgba(243, 172, 60);
+        	position: absolute;
+        	top: 100px;
+        	left: 100px;
+        }
+        .col4{
+        	width: 200px;
+        	height: 200px;
+        	border-radius: 50%;
+            background: rgba(243, 172, 60);
+        	position: relative;
+        	top: 100px;
+        	left: -100px;
+        }
+	</style>
+</head>
+<body>
+	<div class="contaiener">
+		<div class="box">
+			<div class="sm">
+				<div class="col1"></div>
+				<div class="col2"></div>
+				<div class="col3"></div>
+				<div class="col4"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

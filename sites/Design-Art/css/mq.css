@@ -1,0 +1,41 @@
+@media screen and (max-width: 425px){
+    .design-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner-title{
+        font-size: 2em;
+    }
+    .banner p{
+        color: rgb(65, 62, 62);
+    }
+    .banner form{
+        width: 80%;
+    }
+    .blog-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-content{
+        display: block;
+    }
+    .about-text{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation, .navbar-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav a{
+        line-height: 3;
+    }
+}

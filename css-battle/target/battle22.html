@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 22</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background: rgba(245, 214, 182);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+        	width: 200px;
+        	height: 150px;
+        	position: relative;
+        }
+        .col1{
+        	width: 100px;
+        	height: 100px;
+            background: rgba(216, 111, 69);
+            border-radius: 50%;
+            position: relative;
+            top: 40px;
+        }
+        .col2{
+        	width: 100px;
+        	height: 100px;
+            background: rgba(216, 111, 69);
+            border-radius: 50%;
+            position: absolute;
+            left: 80px;
+            top: 10px;
+        }
+        .col3{
+        	width: 50px;
+        	height: 50px;
+            background: rgba(216, 111, 69);
+            border-radius: 50%;
+            position: relative;
+            left: 150px;
+            top: -10px;
+        }
+        .col4{
+        	width: 150px;
+        	height: 50px;
+        	position: relative;
+        	top: -60px;
+        	left: 23px;
+        	border-bottom-left-radius: 30%;
+            background: rgba(216, 111, 69);
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="row">
+				<div class="col1"></div>
+				<div class="col2"></div>
+				<div class="col3"></div>
+				<div class="col4"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

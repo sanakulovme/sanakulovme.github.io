@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DowNet | Vitorials</title>
+	<!-- For min icon | local image -->
+	<link rel="icon" href="../images/vitorials.jpg">
+	<!-- For style | bootstsrap local file -->
+	<link rel="stylesheet" href="../../../../bootstrap-file/css/bootstrap.min.css">
+	<!-- For icons | font awesome global link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			transition: all 0.5s;
+		}
+		:root{
+			--min-font: "Arial Rounded MT";
+		}
+		.min-container{
+			width: 100%;
+			height: 100vh;
+		}
+		.min-col{
+			width: 30%;
+			height: 100vh;
+			background-color: #0007;
+			position: fixed;
+		}
+		.app-box{
+			width: 100%;
+			height: 80vh;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		.app-box img{
+			width: 150px;
+			height: 150px;
+			border-radius: 40px;
+			margin-top: 5px;
+		}
+		.app-box p{
+			font-family: var(--min-font);
+		}
+		.app-box p a{
+			display: inline-block;
+			width: 200px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			font-family: var(--min-font);
+			border-radius: 20px;
+		}
+		.app-box p a i{
+			color: #f00;
+			margin-left: 5px;
+		}
+		.end-col{
+			width: 	70%;
+			height: auto;
+			float: right;
+		}
+		.top-row{
+			width: 100%;
+			height: 30vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.top-row a{
+			font-size: 2em;
+			color: #000;
+			margin: 0 20px;
+		}
+		.top-row a:hover{
+			color: #555;
+			transform: scale(1.2) rotate(10deg);
+		}
+		.title{
+			text-align: center;
+			font-size: 1.2em;
+			width: 100%;
+			height: 10vh;
+			font-family: var(--min-font);
+		}
+
+		.min-app{
+			width: 100%;
+			height: 200vh;
+		}
+
+		.app-row{
+			width: 100%;
+			height: 30vh;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 100px;
+		}
+		.app{
+			width: 200px;
+			height: 250px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border: 1px dashed #ccc;
+		}
+        .app p{
+			text-align: center;
+		}
+		.app p a{
+			text-decoration: none;
+			display: inline-block;
+			width: 80%;
+			font-family: var(--min-font);
+			border-radius: 10px;
+		}
+
+		.app-top-box{
+			display: flex;
+			justify-content: center;
+		}
+		.and-te{
+			width: 100px;
+			height: 100px;
+			border-radius: 70%;
+			margin-top: 5px;
+			margin-bottom: 15px;
+		}
+		@media screen  and (max-width: 425px){
+			.min-container{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+				height: auto;
+			}
+			.min-app{
+				height: auto;
+			}
+			.app-row{
+				flex-direction: column;
+				height: auto;
+			}
+			.app{
+				width: 90%;
+				height: 250px;
+				margin-bottom: 10px
+			}
+			.min-col{
+				width: 100%;
+				height: 40vh;
+				top: -30px
+			}
+			.end-col{
+				position: relative;
+				top: 600px;
+			}
+		}
+
+		@media screen and (max-width: 768px){
+			.top-row{
+				height: 20vh
+			}
+			.app{
+				padding: 10px;
+				margin: 7px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="min-container">
+		<div class="min-col">
+			<div class="top-row">
+				<a href="../../android/android-apps.html" onclick="and_func()">
+					<i class="fa fa-android"></i>
+				</a>
+				<a href="../android-apps.html">
+					<i class="fa fa-home"></i>
+				</a>
+				<a href="../../windows/windows-apps.html" onclick="win_func()">
+					<i class="fa fa-windows"></i>
+				</a>
+			</div>
+			<div class="app-box text-bg-dark border border-1">
+				<img src="../images/vitorials.jpg" alt="Music Best">
+				<p>Vitorials</p>
+				<p>Musiqa ilovasi</p>
+				<P>IOS <i class="fa fa-apple text-primary"></i></P>
+				<p>45 MB</p>
+				<p><a href="#" class="text-bg-dark border border-1">Yuklash<i class="fa fa-download"></i></a></p>
+				<p><a href="#" class="text-bg-dark border border-1">Video qo'llanma <i class="fa fa-youtube-play"></i></a></p>
+			</div>
+		</div>
+		<div class="end-col text-bg-dark">
+			<p class="title"><span class="text-danger">Vitorials</span> ga aloqador</p>
+			<div class="min-app">
+				<div class="app-row">
+					<div class="app">
+                        <div class="app-top-box">
+							<img src="../../android/images/mupka.jpg" alt="Bass Music" class="and-te">
+						</div>
+					<p>Bass Music</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p><a href="../../android/info/mupka.html" class="text-bg-dark">BATAFSIL</a></p>
+                    </div>
+					<div class="app">
+                        <div class="app-top-box">
+							<img src="../../android/images/music.jpg" alt="Music Best" class="and-te">
+						</div>
+					<p>Music Best</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p><a href="../../android/info/music.html" class="text-bg-dark">BATAFSIL</a></p>
+                    </div>
+					<div class="app">
+                        <div class="app-top-box">
+							<img src="../../android/images/offimus.jpg" alt="Music Offline" class="and-te">
+						</div>
+					<p>Music Offline</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p><a href="../../android/info/music-offline.html" class="text-bg-dark">BATAFSIL</a></p>
+                    </div>
+				</div>
+				<div class="app-row">
+					<div class="app">
+                        <div class="app-top-box">
+							<img src="../../windows/images/aimp.png" alt="AIMP">
+						</div>
+					<p>AIMP</p>
+					<P>WINDOWS <i class="fa fa-windows text-primary"></i></P>
+					<p><a href="../../windows/info/aimp.html" class="text-bg-dark">BATAFSIL</a></p>
+                    </div>
+					<div class="app">
+						<div class="app-top-box">
+							<img src="../images/ioslogo.jpg" alt="" class="and-te">
+						</div>
+					<p>Music Player</p>
+					<P>IOS <i class="fa fa-apple text-primary" ></i></P>
+					<p><a href="../info/music-player.html" class="text-bg-dark">BATAFSIL</a></p>
+					</div>
+					<div class="app"></div>
+				</div>
+				<div class="app-row">
+					<div class="app"></div>
+					<div class="app"></div>
+					<div class="app"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function and_func(){
+			alert("Android ilovalar bo'limiga o'tishga ishonchingiz komilmi?")
+		}
+		function win_func(){
+			alert("WINDOWS ilovalar bo'limiga o'tishga ishonchingiz komilmi?")
+		}
+	</script>
+
+</body>
+</html>

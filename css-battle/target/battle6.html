@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle 6</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: rgba(227, 81, 110);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .box-top1 {
+            width: 100px;
+            height: 100px;
+            background: rgb(81, 181, 169);
+        }
+        
+        .box-top2 {
+            width: 100px;
+            height: 100px;
+            background: rgb(250, 222, 139);
+        }
+        
+        .box-bottom1 {
+            width: 100px;
+            height: 100px;
+            background: rgb(247, 243, 215);
+        }
+        
+        .s-row {
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box2">
+                <div class="s-row">
+                    <div class="box-top1"></div>
+                    <div class="box-top2"></div>
+                </div>
+                <div class="s-row">
+                    <div class="box-bottom1"></div>
+                    <div class="box-bottom2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

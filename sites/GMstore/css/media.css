@@ -1,0 +1,163 @@
+
+
+@media screen and (max-width: 1440px){
+	header{
+		height: auto;
+	}
+	.content{
+		width: 90%;
+		height: auto;
+	}
+	.body{
+		height: auto;
+		justify-content: space-around;
+	}
+	.c_box{
+
+	}
+	.avatar_ctn{
+		width: 360px;
+		height: auto;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	.avatar_ctn img{
+		width: 358px;
+		height: 361px;
+	}
+	footer{
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1360px){
+	.games{
+		flex-direction: column;
+		margin: 0;
+	}
+	.g_col, .g_col:nth-child(2){
+		margin: 7.5px 0;
+	}
+	.body{
+		width: 100%;
+	}
+	footer{
+		width: 100%;
+	}
+	nav{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	nav{
+		position: relative;
+		height: 40px;
+/*		background: #000;*/
+  		transition: all 0.5s;
+		overflow: hidden;
+	}
+	.navnar{
+		flex-direction: column;
+		align-items: start;
+	}
+	.navnar a{
+		margin-bottom: 15px;
+	}
+	.open_nav{
+		width: 50px;
+		height: 40px;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #3672E9;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		border-radius: 10px;
+	}
+	.open_nav span{
+		display: inline-block;
+		width: 40px;
+		height: 4px;
+		background: #3672E9;
+		border-radius: 3px;
+		transition: all 0.4s;
+	}
+	.close_nav{
+		width: 50px;
+		height: 40px;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #fff;
+		display: flex;
+		color: #3672E9;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 5px;
+	}
+	.close_nav span:nth-child(1){
+		transform: rotate(45deg);
+		display: inline-block;
+		width: 40px;
+		height: 4px;
+		background: #3672E9;
+		transition: all 0.4s;
+		border-radius: 3px;
+	}
+
+	.close_nav span:nth-child(2){
+		transform: rotate(-45deg);
+		display: inline-block;
+		width: 40px;
+		height: 4px;
+		background: #3672E9;
+		transition: all 0.4s;
+		border-radius: 30px;
+	}
+	.close_nav, .open_nav i{
+		transition: all 0.5s;
+	}
+}
+
+
+@media screen and (max-width: 859px){
+	.body{
+		flex-direction: column;
+	}
+	aside{
+		display: none;
+	}
+	.search{
+		position: relative;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 694px){
+	footer{
+		flex-direction: column;
+	}
+	.body{
+/*		width: 90%;*/
+	}
+	.body{
+		margin-left: 60px;
+	}
+	.ctn_box h1, div{
+		margin: 0;
+	}
+	.g_col{
+		padding: 5px;
+	}
+	.c_box{
+		position: relative;
+		left: -20px;
+	}
+}

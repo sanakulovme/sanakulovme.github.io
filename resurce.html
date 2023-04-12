@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resurce | Sign Up</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <style>
+        body {
+            height: 100vh;
+        }
+        
+        .by {
+            right: 3rem;
+        }
+        
+        .error__box {
+            width: 200px;
+            height: 50px;
+            margin-bottom: 2rem;
+            transform: translateX(0);
+            opacity: 0;
+            /* transition: all 0.4s; */
+            animation-fill-mode: forwards;
+        }
+        
+        .welcome__box {
+            width: 200px;
+            height: 50px;
+            margin-bottom: 2rem;
+            transform: translateX(0);
+            opacity: 0;
+            transition: all 0.4s;
+            animation-fill-mode: forwards;
+            position: absolute;
+        }
+        
+        @keyframes error__animat {
+            20%,
+            70% {
+                transform: translateX(-25px);
+                opacity: 2;
+            }
+            80%,
+            100% {
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+        
+        form input {
+            font-size: 1.25rem !important;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center flex-column user-select-none" id="body">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="error__box border border-2 border-danger d-flex justify-content-center align-items-center" id="error__box">
+            <span class="h4 text-danger m-0">ERROR <i class="fa fa-close"></i></span>
+        </div>
+        <div class="welcome__box border border-2 border-success d-flex justify-content-center align-items-center" id="welcome__box">
+            <span class="h4 text-success m-0">WELCOME <i class="fa fa-check"></i></span>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+        <div class="col-lg-4 border border-2 p-5 pt-3 position-relative shadow-lg ">
+            <h1 class="h4 text-center text-primary mb-4">My resurce | Sign Up</h1>
+            <form autocomplete="off" class="d-flex flex-column">
+                <input type="password" name="" placeholder="alt + a" id="pass" class="form-control mb-4" accesskey="a">
+                <input type="submit" value="Yuborish" class="btn btn-secondary mb-4">
+                <input type="button" value="Bosh sahifa" class="btn btn-secondary mb-3" onclick="location = './index.html'">
+            </form>
+            <div class="position-absolute  by">MR:Abbos <span class="">&copy;2023</span></div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        const pass = document.querySelector('#pass');
+        const error__box = document.querySelector('#error__box');
+        const welcome__box = document.querySelector('#welcome__box');
+
+        let password = '915426543';
+        form.addEventListener('submit', (e, i) => {
+            e.preventDefault();
+            if (pass.value === password) {
+                welcome__box.style.animation = "error__animat 2s"
+                setTimeout(() => {
+                    welcome__box.style.animation = "none"
+                    location = '../my-resurce/index.html'
+                }, 2000)
+            } else {
+                error__box.style.animation = "error__animat 2s"
+                setTimeout(() => {
+                    error__box.style.animation = "none"
+                }, 1500)
+            }
+        })
+
+
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</body>
+
+</html>

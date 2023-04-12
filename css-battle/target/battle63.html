@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 63</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--while: #fff58f;
+        	--aqua: #5decf9;
+            --yellow-1: #f2ad43;
+            --yellow-2: #e08027;
+            --yellow-3: #824b20;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 190px;
+        	height: 190px;
+        	/*border: 1px solid #000;*/
+        	position: relative;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .r1{
+        	width: 70px;
+        	height: 70px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        	border-bottom-right-radius: 0;
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        }
+        .r2{
+        	width: 70px;
+        	height: 70px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        	border-bottom-left-radius: 0;
+        	position: absolute;
+        	right: 0;
+        	top: 0;
+        }
+        .r3{
+        	width: 70px;
+        	height: 70px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        	border-top-right-radius: 0;
+        	position: absolute;
+        	bottom: 0;
+        	left: 0;
+        }
+        .r4{
+        	width: 70px;
+        	height: 70px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        	border-top-left-radius: 0;
+        	position: absolute;
+        	bottom: 0;
+        	right: 0;
+        }
+        .row2{
+        	width: 70px;
+        	height: 70px;
+        	border: 10px solid var(--aqua);
+        	margin: 0 auto;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="r1"></div>
+				<div class="r2"></div>
+				<div class="row2"></div>
+				<div class="r3"></div>
+				<div class="r4"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

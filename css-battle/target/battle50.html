@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 50</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background: #1a4341;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            width: auto;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        .sm{
+            width: 150px;
+            height: 200px;
+        }
+        .top{
+            width: 150px;
+            height: 20px;
+            background: #f3ac3c;
+            border-radius: 10px;
+            display: flex;
+            justify-content: end;
+        }
+        .top_col{
+            width: 20px;
+            height: 100px;
+            /*border: 1px solid #000;*/
+            border-radius: 10px;
+        }
+        .top1{
+            width: 20px;
+            height: 40px;
+            border-radius: 10px;
+            background: #f3ac3c;
+        }
+        .top2{
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: #998235;
+            margin-top: 10px;
+        }
+
+        .bottom{
+            width: 100px;
+            height: 180px;
+            /*border: 1px solid #000;*/
+        }
+        .bottom1{
+            width: 20px;
+            height: 20px;
+            background: #f3ac3c;
+            margin: 0 auto;
+        }
+        .bottom2{
+            width: 50px;
+            height: 20px;
+            margin: 0 auto;
+            background: #f3ac3c;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .bottom3{
+            width: 100px;
+            height: 140px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .bt{
+            width: 100px;
+            height: 60px;
+            background: #f3ac3c;
+            position: relative;
+        }
+        .btb{
+            width: 50px;
+            height: 50px;
+            background: #f3ac3c;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+            z-index: 99;
+        }
+        .bb{
+            width: 100px;
+            height: 80px;
+            background: #998235;
+            position: relative;
+        }
+        .bbb{
+            width: 50px;
+            height: 50px;
+            background: #998235;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: -30px;
+            z-index: 99;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+            <div class="row">
+                <div class="sm">
+                    <div class="top">
+                        <div class="top_col">
+                            <div class="top1"></div>
+                            <div class="top2"></div>
+                            <div class="top2"></div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom1"></div>
+                        <div class="bottom2"></div>
+                        <div class="bottom3">
+                            <div class="bt">
+                                <div class="btb"></div>
+                            </div>
+                            <div class="bb">
+                                <div class="bbb"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+</body>
+</html>

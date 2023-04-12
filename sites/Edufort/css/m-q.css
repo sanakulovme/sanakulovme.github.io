@@ -1,0 +1,126 @@
+@media screen and (max-width: 768px){
+	.but{
+		width: auto;
+		left: 0;
+	}
+	.logo-img{
+		right: 70px;
+	}
+	.p-text{
+		padding: 20px 0;
+	}
+	.center-2{
+		width: 100%;
+	}
+	.box{
+		padding: 0 20px;
+		margin: 0 10px;
+		height: auto;
+	}
+	.sport-box{
+		width: 30%;
+	}
+	.sport-row{
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.curc-text h5{
+		padding: 0;
+		text-align: center;
+	}
+
+
+
+@media screen and (max-width: 425px){
+	.nav{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: auto;
+	}
+	.logo-img{
+		right: -120px;
+	}
+	.tetx-1{
+		font-size: 30px;
+	}
+	.hero-btn{
+		left: 25%;
+	}
+	.boxs{
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		padding: 20px 0;
+	}
+	.box{
+		margin: 10px 0;
+		height: 270px;
+	}
+	.row{
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+	}
+	.sport-row{
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+	}
+	.sport-box{
+		margin: 0 auto;
+		width: 78%;
+	}
+	.students-box{
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+	}
+	.student-box{
+		width: 90%;
+		height: auto;
+	}
+	.online-curs{
+		height: auto;
+		margin-top: 30px;
+	}
+	.curc-text h5{
+		font-size: 20px;
+	}
+	.curc-text > a{
+		left: 80px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.students-row{
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+	}
+	.curc-text h5{
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+		h3{
+			font-size: 1em;
+		}
+		.curc-text > a{
+			left:45px;
+		}
+		.but{
+			text-align: center;
+		}
+		.contac{
+			padding: 20px 4px;
+		}
+		.p-text{
+			font-size: 15px;
+			padding: 10px 15px;
+			line-height: 1.2;
+			letter-spacing: 2px;
+		}
+}
+

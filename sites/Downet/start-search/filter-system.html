@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AppDown | Turli sistemalr uchun ilovalar</title>
+	<!-- For style | bootstrap local file -->
+	<link rel="stylesheet" href="../bootstrap-file/css/bootstrap.min.css">
+	<!-- For icons | font awesome online link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			transition: all 0.2s;
+		}
+		:root{
+			--min-font: "Arial Rounded MT";
+		}
+		.container{
+			height: auto;
+		}
+
+		.navbar{
+			height: 20vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.navbar a:hover{
+			color: #000;
+		}
+		.system-row{
+			width: 100%;
+			height: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.system-col{
+			width: 300px;
+			height: auto;
+			background-color: rgba(23,27,31,var(--bs-bg-opacity,1))!important;
+			border-radius: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.systems{
+			width: 90%;
+			height: auto;
+			text-align: center;
+			margin: 20px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		.systems a{
+			text-decoration: none;
+			color: rgb(168, 163, 163);
+			font-size: 1.2em;
+			font-family: var(--min-font);
+			padding: 10px 50px;
+		}
+		.systems a:hover{
+			background-color: #fff;	
+			/* border-radius: 20px; */
+			color: #000;
+			border: 1px solid #000;
+		}
+		h5{
+			font-family: var(--min-font);
+			text-align: center;
+			color: #000;
+		}
+		.home{
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container text-bg-dark">
+		<div class="navbar">
+			<a href="../index.html" class="h1" title="Orqaga qaytish">
+				<img src="../logos/home.png" alt="Orqaga qaytish" class="home">
+			</a>
+		</div>
+			<h5 class="text-primary">Sizga qaysi qurilma uchun ilovalar kerak.</h5>
+		<div class="system-row">
+			<div class="system-col text-bg-light">
+				<h5 class="text-light">Kerakli tizimni tanlang</h5>
+				<div class="systems text-bg-dark" title="Android ilovalar">
+					<a href="min-system/android/android-apps.html">Android <i class="fa fa-android"></i>
+					</a>
+				</div>
+				<div class="systems text-bg-dark" title="Windows ilovalar"><a href="min-system/windows/windows-apps.html">Windows <i class="fa fa-windows"></i></a></div>
+				<div class="systems text-bg-dark" title="iOS ilovalar"><a href="min-system/ios/iOS-apps.html">iOS <i class="fa fa-apple"></i></a></div>
+				<p>BOSHQACHA TANLOV</p>
+				<div class="systems text-bg-dark"  title="O'yinlar">
+					<FontAwesomeIcon icon="fa-thin fa-gamepad-modern" />
+					<a href="min-system/android/android-apps.html">O'yinlar <i class="fa fa-play"></i>
+					</a>
+				</div>
+				<div class="systems text-bg-dark" title="Ilovalar">
+					<a href="min-system/android/android-apps.html">Ilovalar <i class="fa fa-play-game"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

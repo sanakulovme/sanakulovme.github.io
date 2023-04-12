@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 26</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .contaiener{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background: rgba(101, 146, 207);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sm{
+        	width: 320px;
+        	height: 220px;
+        }
+        .row1, .row3{
+        	width: 100%;
+        	height: 60px;
+        	display: flex;
+        	justify-content: space-between;
+        	align-items: center;
+        	overflow: hidden;
+
+        }
+        .row3{
+        	justify-content: center !important;
+        }
+        .row2{
+        	width: 100%;
+        	height: 100px;
+        }
+        .col1, .col2, .col3{
+        	width: 120px;
+        	height: 120px;
+        	border-radius: 50%;
+        	border: 1px solid rgb(6, 15, 85);
+        	position: relative;
+        	top: 30px;
+        	border-width: 20px;
+        }
+        .col3{
+        	top: -30px !important;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="contaiener">
+		<div class="box">
+			<div class="sm">
+				<div class="row1">
+					<div class="col1"></div>
+					<div class="col2"></div>
+				</div>
+				<div class="row2"></div>
+				<div class="row3">
+					<div class="col3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

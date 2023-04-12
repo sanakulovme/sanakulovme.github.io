@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 56</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--aqua: #5dbcf9;
+        	--box: #191919;
+            --yellow-1: #824b20;
+            --yellow-2: #f08027;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 250px;
+        	height: 200px;
+        	/*border: 1px solid #000;*/
+        	display: flex;
+        	/*justify-content: center;*/
+        	align-items: center;
+        }
+        .start{
+        	width: 50px;
+        	height: 50px;
+        	background: var(--aqua);
+        	border-top-left-radius: 10px;
+        	border-bottom-left-radius: 10px;
+        }
+        .center{
+        	width: 75px;
+        	height: 200px;
+        	/*border: 1px solid #000;*/
+        	overflow: hidden;
+        }
+        .cb{
+        	width: 200px;
+        	height: 200px;
+        	background: var(--aqua);
+        	transform: rotate(45deg);
+        	position: relative;
+        	left: 16px;
+        }
+        .c2{
+        	width: 25px;
+        	height: 200px;
+        }
+        .end{
+        	width: 100px;
+        	height: 200px;
+        	overflow: hidden;
+        }
+        .r1{
+        	width: 200px;
+        	height: 200px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        	position: relative;
+        	right: 100px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .r2{
+        	width: 150px;
+        	height: 150px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .r3{
+        	width: 100px;
+        	height: 100px;
+        	border: 10px solid var(--aqua);
+        	border-radius: 50%;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="start"></div>
+				<div class="center">
+					<div class="cb"></div>
+				</div>
+				<div class="c2"></div>
+				<div class="end">
+					<div class="r1">
+						<div class="r2">
+							<div class="r3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

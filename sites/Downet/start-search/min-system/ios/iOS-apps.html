@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AppDown | IOS ilovalari</title>
+	<!-- For style | bootstrap local file -->
+	<link rel="stylesheet" href="../../../bootstrap-file/css/bootstrap.min.css">
+	<!-- For icons | font awesome online link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.min-coontainer{
+			width: 100%;
+			height: auto;
+		}
+		.min-navbar{
+			width: 100%;
+			height: 25vh;
+			border-bottom: 1px solid #000;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		.min-navbar a{
+			text-decoration: none;
+		}
+		.min-apps-box{
+			width: 100%;
+			min-height: 100vh;
+		}
+		.apps-row{
+			width: 100%;
+			height: 50vh;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.app-box{
+			width: 250px;
+			height: 310px;
+			background-color: #fff;
+			background-color: rgba(23,27,31,var(--bs-bg-opacity,1))!important;
+			border-radius: 15px;
+			text-align: center;
+		}
+		.app-box a{
+			text-decoration: none;
+			color: #000;
+			padding: 5px;
+			border-radius: 20px;
+		}
+		.app-box-top{
+			display: flex;
+			justify-content: center;
+
+		}
+		.win{
+			color: #000;
+		}
+		.you{
+			color: #f00;
+			border-left: 1px solid #000;
+			padding-left: 5px;
+		}
+		.app-box img{
+			width: 100px;
+			height: 110px;
+			border-radius: 25px;
+			margin-top: 5px;
+		}
+		.app-box p a{
+			display: inline-block;
+			width: 80%;
+			font-family: var(--min-font);
+		}
+		.min-navbar a img{
+				width: 40px;
+				height: 40px;
+			}
+
+		@media screen and (max-width: 425px){
+			.min-navbar{
+				flex-direction: column;
+			}
+			.apps-row{
+				flex-direction: column;
+				height: auto;
+			}
+			.app-box{
+				width: 60%;
+				height: 45vh;
+				margin-bottom: 10px;
+			}
+
+		}
+		@media screen and (max-width: 768px){	
+			.apps-row{
+				flex-wrap: wrap;
+				height: auto;
+				margin-bottom: 10px;
+			}
+			.app-box{
+				margin: 5px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="min-coontainer text-bg-dark">
+		<div class="min-navbar">
+			<a href="../../filter-system.html" class="h1 text-black"><img src="./images/icon_arrow_back.svg" alt=""></a>
+			<a href="../../../index.html" class="h1" title="Bosh sahifaga qaytish"><i class="fa fa-home text-black"></i></a>
+			<p class="h3"><span class="text-primary">iOS <i class="fa fa-apple"></i></span> ilovalar</p>
+		</div>
+		<div class="min-apps-box">
+			<div class="apps-row text-bg-dark">
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="./images/ioslogo.jpg" alt="Music">
+					</div>
+					<p>Music Player</p>
+					<P>iPhone <i class="fa fa-apple text-primary"></i></P>
+					<p>98 MB</p>
+					<p><a href="info/music-player.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="./images/vitorials.jpg" alt="Music">
+					</div>
+					<p>Vitorials</p>
+					<P>iPhone <i class="fa fa-apple text-primary"></i></P>
+					<p>45 MB</p>
+					<p><a href="info/vitorials.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+			</div>
+			<div class="apps-row text-bg-dark">
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+			</div>
+			<div class="apps-row text-bg-dark">
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+				<div class="app-box"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

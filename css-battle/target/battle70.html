@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 70</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--while: #fff1c1;
+        	--box: #293962;
+            --red-2: #a64942;
+            --red: #fe5f55;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 150px;
+        	height: 100px;
+        	background: var(--red-2);
+        	position: relative;
+        	top: 10px;
+        	border-radius: 100px;
+        }
+        .t{
+        	width: 150px;
+        	height: 40px;
+        	background: var(--red);
+        	border-radius: 100%;
+        	position: absolute;
+        	bottom: 30px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: end;
+        	z-index: 3;
+        }
+        .b{
+        	width: 10px;
+        	height: 10px;
+        	border-radius: 50%;
+        	background: var(--box);
+        	position: relative;
+        	top: -10px;
+        }
+        .p{
+        	width: 150px;
+        	height: 50px;
+        	background: var(--red);
+        	border-top-left-radius: 100px;
+        	border-top-right-radius: 100px;
+        }
+        .e{
+        	width: 50px;
+        	height: 50px;
+        	border-radius: 50%;
+        	background: var(--red);
+        	position: absolute;
+        	top: -25px;
+        	left: 15px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .e2{
+        	width: 50px;
+        	height: 50px;
+        	border-radius: 50%;
+        	background: var(--red);
+        	position: absolute;
+        	top: -25px;
+        	right: 15px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .w{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 50%;
+        	background: var(--while);
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .i{
+        	width: 10px;
+        	height: 10px;
+        	border-radius: 50%;
+        	background: var(--box);
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="p">
+					<div class="e">
+						<div class="w">
+							<div class="i"></div>
+						</div>
+					</div>
+					<div class="e2">
+						<div class="w">
+							<div class="i"></div>
+						</div>
+					</div>
+				</div>
+				<div class="t">
+					<div class="b" style="margin-right: 10px;"></div>
+					<div class="b"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

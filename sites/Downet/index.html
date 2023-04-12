@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DowNet | Bepul ilovalar</title>
+	<!-- For min icon | local image -->
+	<link rel="icon" href="logos/downapp.png">
+	<!-- For style | bootstrap local file -->
+	<link rel="stylesheet" href="bootstrap-file/css/bootstrap.min.css">
+	<!-- For icons | font awesome online link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		transition: all 0.3s;
+	}
+
+	:root{
+		--min-font: "Arial Rounded MT";
+	}
+
+	.min-container{
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(rgba(6, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(logos/banner-bg-02.jpg) no-repeat top center;
+   background-size: cover !important;
+	}
+	.navbar{
+		width: 100%;
+		height: 20vh;
+		border-bottom: 2px dashed rgba(255, 255, 255, 0.4);
+	}
+
+	.nav-left{
+		display: flex;
+		justify-content: space-around;
+
+	}
+	.nav-left img{
+		width: 50;
+		height: 50px;
+		cursor: pointer;
+	}
+
+	.nav-left a{
+		text-decoration: none;
+		color: #fff;
+
+	}
+	.center-row{
+		height: 70%;
+	}
+
+	.center-col{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.center-col a{
+		text-decoration: none;
+		font-family: var(--min-font);
+		border-radius: 20px;
+	}
+	.back-icons{
+		width: 100%;
+		height: 20vh;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.icon{
+		width: 80px;
+		height: auto;
+		border-radius: 50%;
+	}
+
+	@media screen and (max-width: 375px) {
+		.navbar{
+			border-bottom: none;
+		}
+	}
+
+	</style>
+</head>
+<body>
+
+	<div class="min-container">
+		<div class="navbar p-4">
+			<a href="https://AppDown.netlify.app"><img src="logos/dw.jpg" class="icon" alt="AppDown.uz"></a>
+			<div class="nav-left">
+				<img src="logos/step1.png" alt="Help" class="m-4">
+					<img src="logos/type1.png" alt="Register" class="m-4">
+				<div class="lang">
+					<h5 class="text-danger">TIL</h5>
+				<div class="langs">
+					<a href="#" class="text-primary">UZB</a>
+					<a href="#">РУС</a>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="center-row row-12">
+			<div class="center-col col">
+				<a href="start-search/filter-system.html" class="text-bg-info p-2">Ilovalarni qidiring <i class="fa fa-search"></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

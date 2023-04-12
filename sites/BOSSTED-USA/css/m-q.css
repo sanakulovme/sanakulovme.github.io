@@ -1,0 +1,200 @@
+@media screen and (max-width: 1332px) {
+    .closeNav{
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        width: 300px;
+        flex-direction: column;
+        height: 450px;
+        position: absolute;
+        top: 0;
+        left: -320px;
+        box-shadow: 17px 6px 20px 0px #111;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .top{
+        display: none;  
+    }
+    .openNav{
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: #111;
+    }
+    .navbar a{
+        font-size: 0.8em;
+        padding: 8px 10px;
+        margin: 15px 0;
+        outline: 1px solid #000;
+        border-radius: 10px 0;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .top{
+        height: auto;
+    }
+    
+    .about-top{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .high-box{
+        width: 100%;
+    }
+    .shop{
+        height: auto;
+    }
+    .shop-row{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .row2-col img{
+        height: auto;
+    }
+    .hp{
+        padding: 15px 0 !important;
+    }
+    .about-title{
+        width: 100%;
+    }
+    .about-title h1{
+        font-size: 1.8em;
+    }
+    .high-box p{
+        font-size: 1rem;
+    }
+    .about-imgs{
+        height: 500px;
+    }
+    .high-row-box{
+        height: 300px;
+    }
+    .high-row-box p{
+        font-size: 1em;
+    }
+    .high-row-box h1{
+        padding: 0;
+    }
+    .high-row3{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .icon-con h1{
+        font-size: 1em;
+    }
+    .icon-con p{
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+    .icons{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .banner-box{
+        width: 100%;
+    }
+   
+    
+    .footer-top, .about-box img{
+        height: auto;
+    }
+    .footer-top{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .high-box{
+        padding: 0 20px;
+        
+    }
+    .footer-top div{
+        width: 100%;
+    }
+    /* body{
+        overflow-x: hidden;
+        outline: 1px solid #000;
+    } */
+    footer{
+        height: auto;
+    }
+    .i-t-box p{
+        text-align: center;
+        font-size: 100%;
+    }
+    .high-row1, .high-row-box{
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+    }
+    .high-row-box img{
+        width: auto;
+    }
+    .high-row-box{
+        display: flex;
+        justify-content: center;
+    }
+    .high-row-box h1, p{
+        padding-bottom: 25px;
+    }
+    .high-row2{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .row2-col{
+        width: 80%;
+        height: 441.19px;
+    }
+    .shop-title{
+        width: 100%;
+    }
+    .high-row3-box{
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .banner-box a{
+        width: 40%;
+        margin: 0;
+    }
+    .high-box a{
+        width: 50%;
+    }
+    .banner-btns{
+        justify-content: space-around;
+    }
+    .banner-box h1{
+        font-size: 22px;
+    }
+    .high-row-box{
+        width: 100%;
+    }
+    .icons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner-box a, .high-box a{
+        height: auto;
+        padding: 8px 3px;
+    }
+}

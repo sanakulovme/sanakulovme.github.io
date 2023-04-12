@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Battle 20</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: rgba(98, 48, 109);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .row {
+            width: 200px;
+            height: 100px;
+            display: flex;
+        }
+        
+        .col1 {
+            width: 140px;
+            height: 100px;
+            background: rgba(247, 236, 125);
+            position: relative;
+        }
+        
+        .col2 {
+            width: 60px;
+            height: 100px;
+            background: rgba(227, 143, 102);
+            position: relative;
+        }
+        
+        .box-tl {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background: rgba(98, 48, 109);
+            border-radius: 50%;
+        }
+        
+        .box-bl {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: rgba(98, 48, 109);
+            border-radius: 50%;
+        }
+        
+        .box-tr {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: rgba(98, 48, 109);
+            border-radius: 50%;
+            z-index: 99;
+        }
+        
+        .box-br {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            background: rgba(98, 48, 109);
+            border-radius: 50%;
+            z-index: 99;
+        }
+        
+        .col-tl {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background: rgba(98, 48, 109);
+            border-radius: 50%;
+        }
+        
+        .col-bl {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: rgba(98, 48, 109);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col1">
+                    <div class="box-tl"></div>
+                    <div class="box-bl"></div>
+                    <div class="box-tr"></div>
+                    <div class="box-br"></div>
+                </div>
+                <div class="col2">
+                    <div class="col-tl"></div>
+                    <div class="col-bl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

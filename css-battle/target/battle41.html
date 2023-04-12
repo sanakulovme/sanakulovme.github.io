@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 41</title>
+	<style>
+
+	*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background: rgba(41, 52, 98);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 100px;
+        	height: 140px;
+        	display: flex;
+        }
+        .sm1{
+        	width: 50px;
+        	height: 140px;
+        	background: #fe5e55;
+        	border-top-right-radius: 40px;
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: center;
+        	position: relative;
+        }
+
+        .sm2{
+        	width: 50px;
+        	height: 140px;
+        	background: #fe5e55;
+        	border-top-left-radius: 40px;
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: center;
+        	position: relative;
+        }
+        .eye2{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 50%;
+            background: rgba(41, 52, 98);
+        	position: relative;
+        	top: 5px;
+        	left: 5px;
+        }
+
+        .eye1{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 50%;
+            background: rgba(41, 52, 98);
+        	position: relative;
+        	top: 5px;
+        	left: 15px;
+        }
+
+        .b1{
+        	width: 80px;
+        	height: 80px;
+        	border-radius: 50%;
+            background: rgba(41, 52, 98);
+            position: absolute;
+            top: 100px;
+            left: -30px;
+        }
+
+        .b2{
+        	width: 80px;
+        	height: 80px;
+        	border-radius: 50%;
+            background: rgba(41, 52, 98);
+            position: absolute;
+            top: 100px;
+            left: 50;
+        }
+    </style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="sm1">
+					<div class="eye1"></div>
+					<div class="b1"></div>
+				</div>
+				<div class="sm2">
+					<div class="eye2"></div>
+					<div class="b2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

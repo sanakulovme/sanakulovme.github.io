@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 54</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--box: #f9f492;
+        	--dark: #191919;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 120px;
+        	height: 150px;
+        	position: relative;
+        }
+        .b{
+        	width: 100px;
+        	height: 90px;
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: end;
+        	margin: 0 auto;
+        }
+        .bc{
+        	width: 100px;
+        	height: 40px;
+        	background: var(--dark);
+        	border-bottom-right-radius: 10px;
+        	border-bottom-left-radius: 10px;
+        }
+        .bb{
+        	width: 50px;
+        	height: 50px;
+        	background: var(--dark);
+        	border-bottom-right-radius: 10px;
+        	border-bottom-left-radius: 10px;
+        	margin: 0 auto;
+        }
+        .t{
+        	width: 100px;
+        	height: calc(150px - 90px);
+        	background: var(--box);
+        	display: flex;
+        	justify-content: space-around;
+        	align-items: end;
+        	margin: 0 auto;
+        	padding-bottom: 5px;
+        }
+        .t1{
+        	width: 20px;
+        	height: 50px;
+        	border-radius: 20px;
+        	background: var(--dark);
+        }
+        .t2{
+        	width: 20px;
+        	height: 55px;
+        	border-radius: 20px;
+        	background: var(--dark);
+        }
+        .t3{
+        	width: 20px;
+        	height: 45px;
+        	border-radius: 20px;
+        	background: var(--dark);
+        }
+        .t4{
+        	width: 20px;
+        	height: 35px;
+        	border-radius: 20px;
+        	background: var(--dark);
+        }
+        .t5{
+        	width: 30px;
+        	height: 70px;
+        	border-radius: 20px;
+        	background: var(--dark);
+        	transform: rotate(60deg);
+        	position: absolute;
+        	border: 5px solid var(--box);
+        	left: 10px;
+        	top: 30px;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="t">
+					<div class="t1"></div>
+					<div class="t2"></div>
+					<div class="t3"></div>
+					<div class="t4"></div>
+					<div class="t5"></div>
+				</div>
+				<div class="b">
+					<div class="bc"></div>
+					<div class="bb"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DowNet | Android ilovalari</title>
+	<!-- For min logo | local image -->
+	<link rel="icon" href="images/andlogo.png">
+	<!-- For style | bootstrap local file -->
+	<link rel="stylesheet" href="../../../bootstrap-file/css/bootstrap.min.css">
+	<!-- For icons | font awesome online link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.min-coontainer{
+			width: 100%;
+			height: auto;
+		}
+		.min-navbar{
+			width: 100%;
+			height: 25vh;
+			border-bottom: 1px solid #000;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		.min-navbar a{
+			text-decoration: none;
+		}
+		.min-apps-box{
+			width: 100%;
+			min-height: 100vh;
+		}
+		.apps-row{
+			width: 100%;
+			height: 50vh;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.app-box{
+			width: 250px;
+			height: 310px;
+			background-color: #fff;
+			background-color: rgba(23,27,31,var(--bs-bg-opacity,1))!important;
+			border-radius: 15px;
+			text-align: center;
+		}
+		.search{
+			background-color: rgba(255, 255, 255, 0.4);
+			z-index: -1;
+		}
+		.search-box{
+			width: 200px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		input{
+			outline: none;
+			border-radius: 10px;
+			border: 1px solid #fff;
+		}
+		input:focus{
+			border: none;
+			box-shadow: 2px 2px 10px 2px #000;
+		}
+		.search-box input{
+			width: 250px;
+			height: 40px;
+			text-align: center;
+		}
+		.search-box input[placeholder]{
+				font-size: 0.8em;
+			}
+
+		.app-box a{
+			text-decoration: none;
+			color: #000;
+			padding: 5px;
+			border-radius: 20px;
+		}
+		.app-box-top{
+			display: flex;
+			justify-content: center;
+
+		}
+		.win{
+			color: #000;
+		}
+		.you{
+			color: #f00;
+			border-left: 1px solid #000;
+			padding-left: 5px;
+		}
+		.app-box img{
+			width: 100px;
+			height: 110px;
+			border-radius: 25px;
+			margin-top: 5px;
+		}
+		.app-box p a{
+			display: inline-block;
+			width: 80%;
+			font-family: var(--min-font);
+		}
+		.min-navbar a img{
+				width: 40px;
+				height: 40px;
+			}
+
+
+		@media screen and (max-width: 425px){
+			.min-navbar{
+				flex-direction: column;
+			}
+			.apps-row{
+				flex-direction: column;
+				height: auto;
+			}
+			.app-box{
+				width: 60%;
+				height: auto;
+				margin-bottom: 10px;
+			}
+
+		}
+		@media screen and (max-width: 768px){
+			.apps-row{
+				flex-wrap: wrap;
+				height: auto;
+				margin-bottom: 10px;
+			}
+			.app-box{
+				margin: 5px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="min-coontainer text-bg-dark">
+		<div class="min-navbar">
+			<a href="../../filter-system.html" class="h1 text-light"><img src="./images/icon_arrow_back.svg" alt=""></a>
+			<a href="../../../index.html" class="h1" title="Bosh sahifaga qaytish"><i class="fa fa-home text-light"></i></a>
+			<div class="search-box">
+				<input type="search" placeholder="Qanday ilova izlayapsiz?" class="search-input"><i class="fa fa-search m-1"></i>
+			</div>
+			<p class="h3"><span class="text-primary">Androind <i class="fa fa-android"></i></span> ilovalar</p>
+		</div>
+		<div class="min-apps-box">
+			<div class="apps-row text-bg-dark">
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/music.jpg" alt="Music">
+					</div>
+					<p class="app-box-name">Music Player</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>98 MB</p>
+					<p><a href="info/music.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/snapchat2.png" alt="AIMP">
+					</div>
+					<p class="app-box-name">SNAPCHAT</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>58 MB</p>
+					<p><a href="info/snapchat.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/herodash.jpg" alt="Hero Dash">
+					</div>
+					<p class="app-box-name">Hero Dash</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>48 MB</p>
+					<p><a href="#" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/mupka.jpg" alt="Info Music">
+					</div>
+					<p class="app-box-name">Bass Music</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>23 MB</p>
+					<p><a href="info/mupka.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+			</div>
+			<div class="apps-row text-bg-dark">
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/swampattakc.jpg" alt="sportify">
+					</div>
+					<p class="app-box-name">Swamp Attakc</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>76 MB</p>
+					<p><a href="info/snapchat.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/offimus.jpg" alt="Music Offline">
+					</div>
+					<p class="app-box-name">Music Offline</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>32 MB</p>
+					<p><a href="info/music-offline.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/shaiet.png" alt="AIMP">
+					</div>
+					<p class="app-box-name">SHARIET</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>75 MB</p>
+					<p><a href="info/shariet.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/sportify.png" alt="sportify">
+					</div>
+					<p class="app-box-name">Sportify</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>58 MB</p>
+					<p><a href="#" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+			</div>
+			<div class="apps-row text-bg-dark">
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/ms.jpg" alt="Music">
+					</div>
+					<p class="app-box-name">Music Best</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>43 MB</p>
+					<p><a href="info/music-best.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/instagram.jpg" alt="Instagram">
+					</div>
+					<p class="app-box-name">Instagram</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>80 MB</p>
+					<p><a href="#" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/antw2.jpg" alt="Antwinner">
+					</div>
+					<p class="app-box-name">Antwinner</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>27 MB</p>
+					<p><a href="info/antiwinner.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+				<div class="app-box">
+					<div class="app-box-top">
+						<img src="images/telegram.jpg" alt="telegram">
+					</div>
+					<p class="app-box-name">Telegram</p>
+					<P>ANDROID <i class="fa fa-android text-primary"></i></P>
+					<p>65 MB</p>
+					<p><a href="info/telegram.html" class="text-bg-dark">BATAFSIL</i></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battel 28</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .contaiener{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            /*background: rgba(101, 146, 207);*/
+            display: flex;
+            flex-direction: column;
+        }
+        .row1{
+        	width: 100%;
+        	height: 200px;
+        	display: flex;
+        }
+        .col1{
+        	width: 200px;
+        	height: 200px;
+        	background: #fff1c1;
+        }
+        .col2{
+        	width: 100px;
+        	height: 200px;
+        	display: flex;
+        	align-items: end;
+        	background: #fe5e55;
+
+        }
+        .col-sm{
+        	width: 100px;
+        	height: 50px;
+        	background: #a64942;
+        }
+        .col3{
+        	width: 100px;
+        	height: 200px;
+        	background: #293462;
+
+        }
+        .row2{
+        	width: 100%;
+        	height: 100px;
+        	display: flex;
+        	background: #000;
+        }
+        .col4{
+        	width: 200px;
+        	height: 100px;
+        	background: #fe5e55;
+        	display: flex;
+        	justify-content: end;
+        }
+        .col-sm2{
+        	width: 50px;
+        	height: 100px;
+        	background: #a64942;
+        }
+        .col5{
+        	width: 200px;
+        	height: 100px;
+        	background: #293462;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="contaiener">
+		<div class="box">
+			<div class="row1">
+			<div class="col1"></div>
+			<div class="col2">
+				<div class="col-sm"></div>
+			</div>
+			<div class="col3"></div>
+			</div>
+			<div class="row2">
+				<div class="col4">
+					<div class="col-sm2"></div>
+				</div>
+				<div class="col5"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

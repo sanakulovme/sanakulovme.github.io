@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 69</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--aqua: #5dbcf9;
+        	--box: #191919;
+            --yellow-2: #824b20;
+            --yellow-1: #e08027;
+            --yellow: #f2ad43;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .col{
+        	width: 220px;
+        	height: 150px;
+            position: relative;
+            top: 2px;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .r1{
+            width: 114px;
+            height: 114px;
+            background: var(--yellow);
+            border-radius: 100px;
+            border-top-left-radius: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .r2{
+            width: 125px;
+            height: 132px;
+            background: var(--box);
+            border-radius: 100px;
+            border-top-right-radius: 0;
+            position: absolute;
+            top: -10px;
+            right: 0;
+            z-index: 3;
+
+        }
+        .r3{
+            width: 114px;
+            height: 114px;
+            background: var(--yellow);
+            border-radius: 100px;
+            border-top-right-radius: 0;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .r4{
+            width: 100px;
+            height: 100px;
+            /*border: 1px solid #000;*/
+            transform: rotate(45deg);
+            /*position: absolute;*/
+            overflow: hidden;
+        }
+        .r5{
+            width: 100px;
+            height: 100px;
+            background: var(--yellow);
+            position: relative;
+            top: 50px;
+            z-index: 2;
+        }
+        .p1{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: var(--box);
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .i{
+            width: 25px;
+            height: 25px;
+            /*background: var(--yellow);*/
+            border-radius: 100%;
+            /*border-bottom-right-radius: 0;*/
+            /*border-bottom-left-radius: 0;*/
+            overflow: hidden;
+        }
+        .i2{
+            width: 25px;
+            height: 25px;
+            background: var(--yellow);
+            /*border-radius: 100%;*/
+            position: relative;
+            top: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .o{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--box);
+            position: relative;
+            top: 3px;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+                <div class="r1">
+                    <div class="p1">
+                        <div class="i">
+                            <div class="i2">
+                                <div class="o"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r2">
+                    <div class="r3">
+                        <div class="p1">
+                        <div class="i">
+                            <div class="i2">
+                                <div class="o"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="r4">
+                    <div class="r5"></div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

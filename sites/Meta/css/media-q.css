@@ -1,0 +1,257 @@
+@media screen and (max-width: 1024px){
+	.wave-r{
+		width: auto;
+	}
+	.artists-box{
+		height: auto;
+	}
+	.a-row-2{
+		justify-content: normal;
+	}
+	.story-text p{
+		font-size: 0.8em;
+	}
+	.team-col{
+		width: 300px
+	}
+	.team-row{
+		height: auto;
+	    flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 768px){
+	header{
+		height: auto;
+	}
+	.nav-r{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin-top: 10px;
+	}
+	.nav-r a{
+		margin: 4px 0;
+
+	}
+	.center-l p{
+		padding: 0;
+	}
+	.wave{
+		height: auto;
+	}
+	.wave-box{
+		height: auto;
+	}
+	.wave-r{
+		height: auto;
+	}
+	.wave-r p, div{
+		padding: 0 !important;
+	}
+	.wave-r p:nth-child(1){
+		padding-left: 30px !important;
+	}
+	.a-row-2{
+		width: 100%;
+		flex-wrap: wrap;
+		/*border: 1px solid #fff;*/
+	}
+	.radus-2{
+		left: 0;
+	}
+	.button-box a{
+		font-size: 1em;
+	}
+	.story-text p, .story-active{
+		font-size: 0.8em !important;
+	}
+	.roadmap-box{
+		padding: 10px !important;
+	}
+	.holder-box{
+		flex-direction: column;
+	}
+	.holder-r, .holder-l{
+		margin: 0 auto;
+	}
+	.h-r-box{
+		width: auto;
+		position: relative;
+		top: 100px;
+		padding: 20px !important;
+	}
+	.holder-r{
+		width: 100%;
+	}
+	.footer-row{
+		width: 90%;
+	}
+	nav{
+		width: 300px;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #111;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		/* border-radius: 20px; */
+		box-shadow: 2px 2px 10px 2px #111;
+		left: -320px;
+	}
+	.nav-l{
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-l a{
+		padding: 15px 0;
+	}
+	.nav-r{
+		width: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: row;
+		margin-bottom: 50px;
+	}
+	.close_nav{
+		display: inline-block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	.openNav{
+		display: inline-block;
+		padding: 20px;
+		padding-left: 0;
+	}
+	header{
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.center{
+		height: auto;
+	}
+	.center-box{
+		flex-direction: column;
+	}
+	.center-r, .center-l{
+		width: 100%;
+	}
+	.wave-box{
+		flex-direction: column;
+	}
+	.a-row-2{
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.story .container{
+		width: 100% !important;
+	}
+	.story-box, .story-r{
+		flex-direction: column;
+		z-index: 999;
+	}
+	.story-r{
+		width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.story-img{
+		margin-bottom: 25px;
+	}
+	.story-text{
+		padding: 20px !important;
+	}
+	.story{
+		height: auto;
+	}
+	.roadmap-box{
+		width: 90%;
+	}
+	.holder-l, .holder-r{
+		width: 100%;
+		height: auto;
+	}
+	.holder-l p{
+		width: 100%;
+	}
+	.h-r-box{
+		height: auto;
+	}
+	.team-col{
+		margin: 20px 0;
+	}
+	.join-box{
+		height: auto;
+		flex-direction: column;
+	}
+		.join-l-box p:nth-child(2){
+		padding: 0
+	}
+	.join-l-box button{
+		margin: 0 auto;
+	}
+	.join-r, .join-l{
+		margin: 0 auto;
+	}
+	footer{
+		height: auto;
+	}
+	.footer-row{
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.join-lm, .join-l-box, .join-l{
+		width: 100%;
+		text-align: center
+	}
+}
+
+@media screen and (max-width: 375px){
+	.container{
+		width: 90%;
+	}
+	.nav-l{
+		display: flex;
+		flex-direction: column;
+	}
+	.wave-l img{
+		width: 100%;
+		height: auto;
+	}
+	.join-r img{
+		width: 100%;
+		height: auto;
+	}
+
+
+}
+
+@media screen and (max-width: 320px){
+	.roadmap-botton{
+		flex-direction: column;
+	}
+	.roadmap-box{
+		height: auto;
+	}
+	.limg-box img{
+		width: 100%;
+		height: auto;
+	}
+	.limg-box{
+		width: 100%;
+	}
+	.team-img-box{
+		width: 100%;
+	}
+	.rb-r-2 img{
+		border: 2px solid #fff
+	}
+
+
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Battle 59</title>
+	<style>
+		*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        	--aqua: #4f77ff;
+        	--box: #191919;
+            --yellow: #f9e492;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            z-index: 2;
+            background: var(--box);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+        	width: 150px;
+        	height: 150px;
+        	border-radius: 50%;
+        	background: var(--aqua);
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+        .r{
+        	width: 150px;
+        	height: 90px;
+        	border: 1px solid var(--box);
+        	margin: 0 auto;
+        	display: flex;
+        	justify-content: space-between;
+        	align-items: center;
+        	flex-direction: column;
+        }
+        .b{
+        	width: 160px;
+        	height: 9px;
+        	background: var(--box);
+        }
+        .r2{
+        	width: 90px;
+        	height: 155px;
+        	position: absolute;
+        	border: 10px solid var(--box);
+        	border-radius: 200%;
+        }
+        .b2{
+        	width: 10px;
+        	height: 150px;
+        	background: var(--box);
+        	margin: 0 auto;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="col">
+				<div class="r">
+					<div class="b"></div>
+					<div class="b" style="height: 10px;"></div>
+					<div class="b"></div>
+				</div>
+				<div class="r2">
+					<div class="b2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

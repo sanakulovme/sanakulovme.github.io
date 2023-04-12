@@ -1,0 +1,120 @@
+@media screen and (max-width: 425px) {
+    .container{
+        width: 90%;
+    }
+    #features{
+        flex-direction: column;
+        height: auto;
+    }  
+    .box{
+        width: 100%;
+        height: auto;
+    }
+    .box p{
+        width: 90%;
+    }
+    #home-info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    #home-info .info-content{
+        width: 90%;
+    }
+    #showcase p{
+        width: 90%;
+    }
+    #navbor .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    #about-info .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    #about-info .info-left{
+        width: 90%;
+    }
+    #about-info .info-right{
+        width: 100%;
+    }
+    #about-info .info-right img{
+        width: 180px;
+        height: auto;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    #testimonials{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    #contact-from .container{
+        text-align: center;
+    }
+    #contact-info .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .con-box{
+        width: 90%;
+        height: 150px;
+    }
+}
+
+
+/* Planshet 768px Media Screen */
+
+@media screen and (max-width: 768px){
+   .btn-ligth{
+    border: 1px solid #000;
+    }
+
+    #contact-from{
+        text-align: center;
+    }
+}
+/* 
+@media screen and (max-width: 2560px) {
+    body{
+        font-size: 3em;
+    }
+    #showcase{
+        height: 60vh;
+    }
+    #home-info{
+        height: 500px;
+    }
+    #features{
+        height: 660px;
+    }
+     #about-info .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    #about-info .info-left{
+        width: 50%;
+    }
+    #about-info .info-right{
+        width: 50%;
+    }
+    #about-info .info-right img{
+        width: 600px;
+        height: auto;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+   
+}
+ */
