@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resurce</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background: #ddd; */
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            /* outline: 1px solid; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cakp {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            font-family: 'Mitr';
+            user-select: none;
+            color: #ddd900;
+        }
+        
+        .arrow {
+            width: 200px;
+            height: 50px;
+            background: green;
+            animation: arrow 3s linear infinite;
+            position: absolute;
+            box-shadow: 2px 2px 10px 2px #000;
+        }
+        
+        .arrow3 {
+            width: 200px;
+            height: 50px;
+            background: green;
+            animation: arrow 2s linear infinite;
+            position: absolute;
+            box-shadow: 2px 2px 10px 2px #000;
+        }
+        
+        .arrow2 {
+            width: 50px;
+            height: 200px;
+            background: green;
+            animation: arrow 1.5s linear infinite;
+            box-shadow: 2px 2px 10px 2px #000;
+        }
+        
+        @keyframes arrow {
+            50% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(540deg);
+            }
+        }
+        
+        .top {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: -10px;
+            background: #fff;
+            z-index: 99999;
+        }
+        
+        span {
+            animation: span 1s linear infinite;
+        }
+        /* @keyframes span {
+            30% {
+                transform: rotate(15deg) scale(1.2);
+            }
+            60% {
+                transform: rotate(-15deg) scale(0.8);
+            }
+            100% {
+                transform: rotate(0) scale(1.0);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <div class="top"></div> -->
+        <div class="arrow"></div>
+        <div class="arrow2"></div>
+        <div class="arrow3"></div>
+        <div class="cakp">
+            <span>A</span>
+        </div>
+    </div>
+</body>
+
+</html>

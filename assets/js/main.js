@@ -232,13 +232,14 @@ const contactForm = document.getElementById('contact-form'),
 
 const sendEmail = (e) => {
     e.preventDefault()
-    if (contactName.value === '' ||  contactEmail.value === '' ||  contactProject.value === ''){
+    if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '') {
         alert('Malumot kiriting!')
     } {
         // serviceID - templateID - #form - publicKey
         emailjs.sendForm('service_ihrehvp', 'template_3pm15pe', '#contact-form', 'Y7JLOCD5HrUS0gsvn')
             .then(() => {
-                alert('Malumot Yuborildi!')}, (error) => {
+                alert('Malumot Yuborildi!')
+            }, (error) => {
                 alert('OOPS! SOMETHING HAS FAILED...', error)
             })
 
@@ -248,3 +249,12 @@ const sendEmail = (e) => {
     }
 }
 contactForm.addEventListener('submit', sendEmail)
+
+let load__container = document.querySelector('.load__container')
+
+function load__fn() {
+    load__container.style.display = 'flex'
+    setTimeout(() => {
+        load__container.style.transform = 'scale(0)'
+    }, 1500)
+}
