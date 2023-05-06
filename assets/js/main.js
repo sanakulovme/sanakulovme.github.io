@@ -249,7 +249,6 @@ const sendEmail = (e) => {
     }
 }
 contactForm.addEventListener('submit', sendEmail)
-
 let load__container = document.querySelector('.load__container')
 
 function load__fn() {
