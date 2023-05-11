@@ -75,3 +75,24 @@ function helpFn() {
         }
     }
 }
+
+twoI.addEventListener('keydown', ky => {
+    if (ky.key == 'Backspace' && twoI.value == '') {
+        console.log(ky.key)
+        oneI.focus()
+    }
+})
+
+sriI.addEventListener('keydown', ky => {
+    if (ky.key == 'Backspace' && sriI.value == '') {
+        console.log(ky.key)
+        twoI.focus()
+    }
+})
+
+foI.addEventListener('keydown', ky => {
+    if (ky.key == 'Backspace' && foI.value == '') {
+        console.log(ky.key)
+        sriI.focus()
+    }
+})
