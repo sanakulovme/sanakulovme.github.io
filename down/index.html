@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        input,
+        a {
+            min-width: 250px;
+            height: 40px;
+            padding: 10px;
+            font-size: 15px;
+            outline: 0;
+            border: 2px solid #3af30c;
+            border-radius: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            font-family: Roboto;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        
+        iframe {
+            width: 400px;
+            height: 250px;
+            border: 1px dotted #000;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="" frameborder="0" id="iframe"></iframe>
+    <input type="text" placeholder="Enter Downland URL..." oninput="fn()" id="input">
+    <a href="" id="a" download>Downland</a>
+    <script>
+        let iframe = document.getElementById('iframe');
+        let input = document.getElementById('input');
+        let a = document.getElementById('a');
+
+        function fn() {
+            iframe.src = input.value
+            console.log(input.value)
+                // console.log(iframe.value)
+            if (!input.value == '') {
+                a.style.display = 'flex'
+                a.href = input.value
+                    // a.download = input.value
+            } else {
+                a.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>
