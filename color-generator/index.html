@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style>
         @media screen and (max-width: 768px) {
             .cl {
                 margin-bottom: 30px;
             }
+        }
+        
+        .copy {
+            margin-left: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -36,7 +42,7 @@
                 </div>
                 <div class="row">
                     <div class="d-flex h5 text-center justify-content-center">
-                        <span>grb(</span><span id="red_s">0</span>,<span id="green_s">0</span>,<span id="blue_s">0</span>)
+                        <span id="rgbColor"><span>grb(</span><span id="red_s">0</span>,<span id="green_s">0</span>,<span id="blue_s">0</span>)</span> <span class="copy" onclick="copyColor('rgb')"><i class="fa fa-copy"></i></span>
                     </div>
                 </div>
             </div>
@@ -55,8 +61,8 @@
                     <input value="0" max="100" class="form-range p-1" type="range" name="blue" id="h_3" oninput="hls.style.background = 'hsl(' + h_1.value + ','+ h_2.value+'%,'+ h_3.value+'%)',  h3_s.textContent = h_3.value + '%'">
                 </div>
                 <div class="row">
-                    <div class="d-flex h5 text-center justify-content-center">
-                        <span>hsl(</span><span id="h1_s">0</span>,<span id="h2_s">0</span>,<span id="h3_s">0</span>)
+                    <div class="d-flex h5 text-center justify-content-center" id="hslColor">
+                        <span>hsl(</span><span id="h1_s">0</span>,<span id="h2_s">0</span>,<span id="h3_s">0</span>) <span class="copy" onclick="copyColor('hsl')"><i class="fa fa-copy"></i></span>
                     </div>
                 </div>
             </div>
