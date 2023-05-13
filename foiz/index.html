@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="./bootstrap.min.css">
     <style>
         body {
-            color: #fff!important;
-            background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1))!important;
+            color: #fff !important;
+            background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
         }
-        
+
         .my-col {
             width: 200px;
             height: 250px;
         }
+
         /* #range {
             width: 230px;
         } */
-        
+
         .m0a {
             margin: 0 auto;
             display: block;
         }
-        
+
         #fz {
             width: 100%;
             position: absolute;
@@ -32,18 +33,18 @@
             background: #000;
             transition: all 0.4s;
         }
-        
+
         .h2 {
             z-index: 100;
         }
-        
+
         .e_n {
             width: 280px;
             justify-content: space-between;
             display: flex;
             margin: 10px 0;
         }
-        
+
         .e_n output {
             width: 50px;
             height: 50px;
@@ -59,32 +60,35 @@
 <body class='overflow-hidden' id="body">
     <p class="position-absolute h3" style="top: 50px; left: 50px;">Step: <span id="step">0</span></p>
     <p class="position-absolute h3" style="top: 100px; left: 50px;">Result: 30/ <span id="result">0</span></p>
-    <p class="card-title text-center h3 mt-4"><span class="bg-danger p-2">%</span> game by: <span class="text-danger">Abbos</span>
-        <div class="row d-flex flex-row-reverse justify-content-around align-items-center">
-            <div class="col-1 mt-5 mb-5 d-flex flex-column justify-content-center align-items-center">
-                <p class="card-title h5 text-primary">100%</p>
-                <div class="col-1 my-col position-relative border border-1 mt-3 mb-3 d-flex justify-content-center align-items-center">
-                    <div id="fz"></div>
-                    <span class="h2" id="h2">?%</span>
-                </div>
-                <p class="card-title h5 text-primary">0%</p>
+    <p class="card-title text-center h3 mt-4"><span class="bg-danger p-2">%</span> game by: <span
+            class="text-danger">Abbos</span>
+    <div class="row d-flex flex-row-reverse justify-content-around align-items-center">
+        <div class="col-1 mt-5 mb-5 d-flex flex-column justify-content-center align-items-center">
+            <p class="card-title h5 text-primary">100%</p>
+            <div
+                class="col-1 my-col position-relative border border-1 mt-3 mb-3 d-flex justify-content-center align-items-center">
+                <div id="fz"></div>
+                <span class="h2" id="h2">?%</span>
             </div>
-            <div class="col-4 border border-1 d-flex flex-column justify-content-center align-items-center">
-                <div class="e_n">
-                    <output class="bg-danger" id="danger_p"></output>
-                    <output class="bg-warning" id="warning_p"></output>
-                    <output class="bg-success" id="sc"></output>
-                    <output class="bg-warning" id="wa"></output>
-                    <output class="bg-danger" id="dn"></output>
-                </div>
-                <input type="range" name="range" id="range_disp" class="form-range" max="100" oninput="range__fn()" disabled>
-                <output class="h3 text-success p-2" id="output_disp">50%</output>
-                <button class="btn btn-danger m-3" onclick="tryFn()" disabled id="tryBtn">TRY</button>
+            <p class="card-title h5 text-primary">0%</p>
+        </div>
+        <div class="col-4 border border-1 d-flex flex-column justify-content-center align-items-center">
+            <div class="e_n">
+                <output class="bg-danger" id="danger_p"></output>
+                <output class="bg-warning" id="warning_p"></output>
+                <output class="bg-success" id="sc"></output>
+                <output class="bg-warning" id="wa"></output>
+                <output class="bg-danger" id="dn"></output>
             </div>
+            <input type="range" name="range" id="range_disp" class="form-range" max="100" oninput="range__fn()"
+                disabled>
+            <output class="h3 text-success p-2" id="output_disp">50%</output>
+            <button class="btn btn-danger m-3" onclick="tryFn()" disabled id="tryBtn">TRY</button>
         </div>
-        <div class="container">
-            <button class="btn btn-primary m0a" onclick="startGame()" id="sg">Start Game</button>
-        </div>
+    </div>
+    <div class="container">
+        <button class="btn btn-primary m0a" onclick="startGame()" id="sg">Start Game</button>
+    </div>
     </p>
     <script src="./my.js"></script>
 </body>
