@@ -13,7 +13,6 @@ function startGame() {
     fz.style.height = random__num + '%'
 
 
-    console.log(random__num)
 
 }
 let range_disp = document.getElementById('range_disp');
