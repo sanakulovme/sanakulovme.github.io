@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style>
-        @media screen and (max-width: 768px) {
+        body {
+            min-height: 100vh;
+            /* background: linear-gradient(45deg, #ccc 50%, #fff 50%); */
+            /* background: rgba(200, 189, 175, 0.6); */
+        }
+        
+        @media screen and (max-width: 523px) {
             .cl {
                 margin-bottom: 30px;
             }
-        }
-        
-        .copy {
-            margin-left: 10px;
-            cursor: pointer;
+            body {
+                padding-bottom: 100px;
+            }
         }
     </style>
 </head>
@@ -26,47 +29,65 @@
 
     <div class="container d-flex justify-content-center pt-5">
         <div class="row justify-content-around align-items-center" style="width: 100%;">
-            <div class="col-lg-4 cl border border-2 p-3" style="height: 280px; width: 250px;">
+            <div class="col-lg-4 cl border border-2 p-3" style="height: 300px; width: 250px;">
                 <div style="width: 100%; height: 150px; background: black;" class="border border-1 mb-2" id="rgb"></div>
                 <div class="d-flex">
                     <span>R</span>
-                    <input value="0" max="250" class="form-range p-1" type="range" name="red" id="red" oninput="rgb.style.background = 'rgb(' + red.value + ','+ green.value+','+ blue.value+')',  red_s.textContent = red.value">
+                    <input value="0" max="250" class="form-range p-1" type="range" name="red" id="red" oninput="rgbFn()">
                 </div>
                 <div class="d-flex">
                     <span>G</span>
-                    <input value="0" max="250" class="form-range p-1" type="range" name="green" id="green" oninput="rgb.style.background = 'rgb(' + red.value + ','+ green.value+','+ blue.value+')',  green_s.textContent = green.value">
+                    <input value="0" max="250" class="form-range p-1" type="range" name="green" id="green" oninput="rgbFn()">
                 </div>
                 <div class="d-flex">
                     <span>B</span>
-                    <input value="0" max="250" class="form-range p-1" type="range" name="blue" id="blue" oninput="rgb.style.background = 'rgb(' + red.value + ','+ green.value+','+ blue.value+')',  blue_s.textContent = blue.value">
+                    <input value="0" max="250" class="form-range p-1" type="range" name="blue" id="blue" oninput="rgbFn()">
                 </div>
-                <div class="row">
-                    <div class="d-flex h5 text-center justify-content-center">
-                        <span id="rgbColor"><span>grb(</span><span id="red_s">0</span>,<span id="green_s">0</span>,<span id="blue_s">0</span>)</span> <span class="copy" onclick="copyColor('rgb')"><i class="fa fa-copy"></i></span>
-                    </div>
+                <div class="d-flex">
+                    <span>A</span>
+                    <input value="1.0" max="1.0" step="0.1" class="form-range p-1" type="range" name="alfa" id="alfa" oninput="rgbFn()">
+                </div>
+                <div class="d-flex h5 text-center justify-content-center align-items-center position-relative">
+                    <input id="rgbSpan" value="rgba(0,0,0,1.0)" class="form-control" style="font-size: 17px;" disabled>
+                    <img src="./copy.svg" title="copy" style="width: 20px; cursor: pointer; position: absolute; right: 10px;" alt="" onclick="copyT('rgb')">
+                    <!-- <span>grb(</span><span id="red_s">0</span>,<span id="green_s">0</span>,<span id="blue_s">0</span>) -->
                 </div>
             </div>
-            <div class="col-lg-4 border border-2 p-3" style="height: 280px; width: 250px;">
+            <div class="col-lg-4 cl border border-2 p-3" style="height: 300px; width: 250px;">
                 <div style="width: 100%; height: 150px; background: black;" class="border border-1 mb-2" id="hls"></div>
                 <div class="d-flex">
                     <span>H</span>
-                    <input value="0" max="100" class="form-range p-1" type="range" name="red" id="h_1" oninput="hls.style.background = 'hsl(' + h_1.value + ','+ h_2.value+'%,'+ h_3.value+'%)',  h1_s.textContent = h_1.value">
-                </div>
-                <div class="d-flex">
-                    <span>L</span>
-                    <input value="0" max="100" class="form-range p-1" type="range" name="green" id="h_2" oninput="hls.style.background = 'hsl(' + h_1.value + ','+ h_2.value+'%,'+ h_3.value+'%)',  h2_s.textContent = h_2.value + '%'">
+                    <input value="0" max="360" class="form-range p-1" type="range" name="red" id="h_1" oninput="hlsFn()">
                 </div>
                 <div class="d-flex">
                     <span>S</span>
-                    <input value="0" max="100" class="form-range p-1" type="range" name="blue" id="h_3" oninput="hls.style.background = 'hsl(' + h_1.value + ','+ h_2.value+'%,'+ h_3.value+'%)',  h3_s.textContent = h_3.value + '%'">
+                    <input value="0" max="100" class="form-range p-1" type="range" name="green" id="h_2" oninput="hlsFn()">
                 </div>
-                <div class="row">
-                    <div class="d-flex h5 text-center justify-content-center" id="hslColor">
-                        <span>hsl(</span><span id="h1_s">0</span>,<span id="h2_s">0</span>,<span id="h3_s">0</span>) <span class="copy" onclick="copyColor('hsl')"><i class="fa fa-copy"></i></span>
-                    </div>
+                <div class="d-flex">
+                    <span>L</span>
+                    <input value="0" max="100" class="form-range p-1" type="range" name="blue" id="h_3" oninput="hlsFn()">
+                </div>
+                <div class="d-flex">
+                    <span>A</span>
+                    <input value="1.0" max="1.0" step="0.1" class="form-range p-1" type="range" name="alfa" id="h_alfa" oninput="hlsFn()">
+                </div>
+                <div class="d-flex h5 text-center justify-content-center align-items-center position-relative">
+                    <input id="hlsSpan" value="hlsa(0,0,0,1.0)" class="form-control" style="font-size: 17px;" disabled>
+                    <img src="./copy.svg" title="copy" style="width: 20px; cursor: pointer; position: absolute; right: 10px;" alt="" onclick="copyT('hsl')">
+                    <!-- <span>grb(</span><span id="red_s">0</span>,<span id="green_s">0</span>,<span id="blue_s">0</span>) -->
+                </div>
+            </div>
+            <div class="col-lg-4 border border-2 p-3" style="height: 300px; width: 250px;">
+                <div style="width: 100%; height: 150px; background: black;" class="border border-1 mb-2" id="hex"></div>
+                <input type="color" name="" id="hexInput" class="form-control-color" oninput="colorFn()" style="margin-bottom: 60px;">
+                <div class="d-flex h5 text-center justify-content-center align-items-center position-relative">
+                    <input id="hexSpan" value="#000" class="form-control" style="font-size: 17px;" disabled>
+                    <img src="./copy.svg" title="copy" style="width: 20px; cursor: pointer; position: absolute; right: 10px;" alt="" onclick="copyT('hex')">
+                    <!-- <span>grb(</span><span id="red_s">0</span>,<span id="green_s">0</span>,<span id="blue_s">0</span>) -->
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- <div class="container">
