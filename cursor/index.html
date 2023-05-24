@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .mybtn {
+            width: 70px;
+            position: relative;
+            /* transition: all 0.195s; */
+        }
+    </style>
+</head>
+
+<body id="body" class="error">
+
+    <form autocomplete="off" class="shadow d-flex flex-column p-5 col-lg-3">
+        <p class="text-center">Password: 1234</p>
+        <p class="text-center display-6">#Login Form</p>
+        <label for="login" class="form-label h4">#Login:</label>
+        <input type="text" id="login" class="form-control mb-4" value="user@example.com">
+        <label for="password" class="h4">#Password:</label>
+        <input type="password" class="form-control mb-4" oninput="passFn()" placeholder="Password" id="password">
+        <center>
+            <button onmouseover="hover()" class="btn btn-primary mybtn" id="mybtn">submit</button>
+        </center>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
