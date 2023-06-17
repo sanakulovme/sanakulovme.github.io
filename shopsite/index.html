@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!--=============== Font Awesome icons ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Wenb developer | web site</title>
+</head>
+<!-- onload="load__fn()" -->
+
+<body>
+    <div class="load__container">
+        <div class="load__box">
+            <div class="arrow"></div>
+            <div class="arrow2"></div>
+            <div class="arrow3"></div>
+            <div class="cakp">
+                <span>A</span>
+            </div>
+        </div>
+    </div>
+    <div class="ads">
+        <div onclick="location='#telegram_manzilingiz'">
+            <img src="./assets/img/telegram.png" alt="" class="ads__img" style="border-radius: 50%; width: 50px; height: 50px;">
+            <span class="ads__text">/Telegram_manzilingiz</span>
+        </div>
+        <i class="fa fa-close fa-2x" onclick="closeAds(1)"></i>
+    </div>
+    <div class="pad__dm">
+        <div onclick="location='#instagram_manzilingiz'" target="_blank">
+            <img src="./assets/img/instagram.jpg" alt="" class="ads__img-2">
+            <span class="ads__text">/Instagram_manzilingiz</span>
+        </div>
+
+        <i class="fa fa-close fa-2x" onclick="closeAds(2)"></i>
+    </div>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Developer.uz</a>
+
+            <div class="nav__menu anmat__bottom">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bxs-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bxs-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Change Theme button -->
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
+        </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <img src="./assets/img/Shape.png" alt="" class="v__img-1">
+                <img src="./assets/img/Github-pink.png" alt="" class="v__img-2">
+
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Ismingiz</h1>
+                    <h3 class="home__education">Web Developer</h3>
+
+                    <div class="home__buttons">
+                        <a href="./assets/pdf/Ansel-Cv.pdf" class="button button--ghost">   
+                        Downand CV
+                        </a>
+                        <a href="#about" class="button">Haqimda</a>
+                    </div>
+
+                </div>
+
+                <div class="home__handle">
+                    <img src="./assets/img/Avatar.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="#Telegram_manzilingiz" target="_blank" class="home__social-link">
+                        <i class='bx bxl-telegram'></i>
+                    </a>
+                    <a href="#Github_manzilingiz" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#Instagram_manzilingiz" target="_blank" class="home__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scoll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Web Developer</span>
+            <h2 class="section__title">O'zim haqimda</h2>
+
+            <div class="about__container container grid">
+                <img src="./assets/img/Figma.png" alt="" class="v__img-3">
+                <img src="./assets/img/8887809.webp" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="bx bx-award about__icon"></i>
+                            <h3 class="about__title">Tajriba</h3>
+                            <span class="about__subtitle">1 yillik +</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="bx bx-briefcase-alt about__icon"></i>
+                            <h3 class="about__title">Amaliy</h3>
+                            <span class="about__subtitle">25 + Portfolio</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="bx bx-support about__icon"></i>
+                            <h3 class="about__title">Bog'lanish</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Salom! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestias delectus iusto quia iure voluptatibus doloribus rerum corrupti quam molestiae ipsa tempora ea omnis, dolore, unde consequuntur culpa obcaecati? Expedita.
+                    </p>
+                    <a href="#work" class="button">Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Bizning xizmatlar</span>
+            <h2 class="section__title">Web dasturlash</h2>
+
+            <div class="skills__container container grid">
+                <img src="./assets/img/Python.png" alt="" class="v__img-4">
+                <div class="skills__content sc__1">
+                    <h3 class="skills__title">Frontend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">SCSS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content sc__2">
+                    <h3 class="skills__title">Backend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQl</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section an">
+            <span class="section__subtitle">Web xizmatlar</span>
+            <h2 class="section__title">Zamonaviy kasblar</h2>
+
+
+            <div class="service__container container grid">
+                <img src="./assets/img/DesignIcon.png" alt="" class="v__img-5">
+                <div class="service__card ">
+                    <h3 class="service__title">Frontend<br>Dasturlash</h3>
+
+                    <span class="service__button">
+                        Ko'proq <i class="bx bx-right-arrow-alt"></i>
+                    </span>
+
+
+                    <div class="service__modal">
+                        <div class="service__modal-content">
+                            <i class="bx bx-x service__modal-close"></i>
+
+                            <h3 class="service__modal-title">Frontend Dasturlash</h3>
+                            <p class="service__modal-description">
+                                Internet uchun turli web saytlarning tashqi old (FRONTEND) qismini ishlab chiqish.
+                            </p>
+
+                            <ul class="service__modal-list">
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        HTML5, CSS Belgilash tillarini bilish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Bootstrap orqali web saytlar yaratish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        JavaScript orqali turli amallarni tayyorlash.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Figma orqali web saytlarni ishlab chiqish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        GitHub orqali kerakli resurslarni tezda topish.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__card ">
+                    <h3 class="service__title">Backend<br>Dasturlash</h3>
+
+                    <span class="service__button">
+                        Ko'proq <i class="bx bx-right-arrow-alt"></i>
+                    </span>
+
+                    <div class="service__modal">
+                        <div class="service__modal-content">
+                            <i class="bx bx-x service__modal-close"></i>
+
+                            <h3 class="service__modal-title">Backend Dasturlash</h3>
+                            <p class="service__modal-description">
+                                Internet uchun turli web saytlarning tashqi orqa (BACKEND) qismini ishlab chiqish.
+                            </p>
+
+                            <ul class="service__modal-list">
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        PHP orqali saytlarni avtomatlashtirish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        JavaScript - React, Node.JS orqali saytlar xafsiz qilish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        MySQL - malumotlar ombori bilan ishlash.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Python - Django orqali foydalanish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Freelancer va boshqa saytlardan ish topish.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__card ">
+                    <h3 class="service__title">Graffik<br>Dizayner</h3>
+
+                    <span class="service__button">
+                        Ko'proq <i class="bx bx-right-arrow-alt"></i>
+                    </span>
+
+                    <div class="service__modal">
+                        <div class="service__modal-content">
+                            <i class="bx bx-x service__modal-close"></i>
+
+                            <h3 class="service__modal-title">Graffik Dizayner</h3>
+                            <p class="service__modal-description">
+                                Web saytlar turli mahsulotlar uchun maxsuz dizaynlar ishlab chiqish.
+                            </p>
+
+                            <ul class="service__modal-list">
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Adobe Photoshop orqali suratlarga ishlov berish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Adobe Primer Pro - Media fayllarni montaj qilish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Figma orqlai web saytlar dizaynlarini chizish.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Web dizaynlar uchun turli web saytlar bilan ishlash.
+                                    </p>
+                                </li>
+
+                                <li class="service__modal-item">
+                                    <i class="bx bx-check service__modal-icon"></i>
+                                    <p class="service__modal-info">
+                                        Kuchli 💪 kompiyuterga ega bo'lish 🖥.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">So'ngi ishlar</span>
+            <h2 class="section__title">Mening portfoliom</h2>
+
+
+            <div class="work__filters">
+                <span class="work__item sc__1 active-work" data-filter="all">Jami</span>
+                <span class="work__item sc__1" data-filter=".figma">Figma</span>
+                <span class="work__item anmat__bottom" data-filter=".small">Kichik</span>
+                <span class="work__item sc__2" data-filter=".big">Katta</span>
+            </div>
+
+            <div class="work__container container grid">
+                <img src="./assets/img/CodeIcon.png" alt="" class="v__img-6">
+                <div class="work__card sc__1 mix big">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/BlueCollar/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__2 mix figma">
+                    <img src="./assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/BOSSTED-USA/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__1 mix big">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/Design-Art/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__2 mix big">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/Downet/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__1 mix small">
+                    <img src="./assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/Edufort/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__2 mix figma">
+                    <img src="./assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/GMstore/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__1 mix small">
+                    <img src="./assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/HBT-hotel/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__2 mix figma">
+                    <img src="./assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/Meta/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__1 mix big">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="./sites/MTG/index.html" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card sc__2 mix figma">
+                    <img src="./assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Portfolio name</h3>
+
+                    <a href="https://mahorat-it.uz/" target="_blank" class="work__button">
+                        Ko'ring <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">Web Dastuchilar</span>
+            <h2 class="section__title">BIZNING JAMOA <i class="fa fa-group"></i></h2>
+
+
+            <div class="testemonal__container container swiper anmat__bottom">
+                <div class="swiper-wrapper">
+                    <div class="testemonal__card swiper-slide">
+                        <img src="./assets/img/testimonial1.png" alt="" class="testemonal__img">
+
+                        <h3 class="testemonal__name">Ism Familya</h3>
+                        <p class="testemonal__description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, nam! Lorem ipsum dolor sit. 👇
+                            <br><br>
+                            <a href="#web_site_url" class="work__button">
+                                Web sahifam <i class="bx bx-right-arrow-alt work__icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="testemonal__card swiper-slide">
+                        <img src="./assets/img/testimonial1.png" alt="" class="testemonal__img">
+
+                        <h3 class="testemonal__name">Ism Familya</h3>
+                        <p class="testemonal__description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Veritatis aperiam optio maiores vel quos. 👇
+                            <br><br>
+                            <a href="#web_site_url" class="work__button">
+                                Web sahifam <i class="bx bx-right-arrow-alt work__icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="testemonal__card swiper-slide">
+                        <img src="./assets/img/testimonial1.png" alt="" class="testemonal__img">
+
+                        <h3 class="testemonal__name">Ism Familya</h3>
+                        <p class="testemonal__description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, temporibus, aspernatur? Dolorem. 👇
+                            <br><br>
+                            <a href="#web_site_url" class="work__button">
+                                Web sahifam <i class="bx bx-right-arrow-alt work__icon"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination "></div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get In touch</span>
+            <h2 class="section__title">Bog'lanish <i class="fa fa-plus"></i></h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content sc__1">
+                    <h3 class="contact__title">Aloqa uchun <i class="bx bx-support"></i></h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="bx bx-mail-send contact__card-icon"></i>
+                            <div class="contact__card-title">Email</div>
+                            <span class="contact__card-data">user@gmail.com</span>
+
+                            <a href="mailto:#e_pochta" target="_blank" class="contact__button">
+                                Manzil... <i class="bx bx-arrow-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fa fa-phone contact__card-icon"></i>
+                            <div class="contact__card-title">Telefon</div>
+                            <span class="contact__card-data">+998 ** *** ** **</span>
+
+                            <a href="#instagram_manzilingiz" target="_blank" class="contact__button">
+                                Qo'ng'iriq... <i class="bx bx-arrow-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="bx bxl-telegram contact__card-icon"></i>
+                            <div class="contact__card-title">Messenger</div>
+                            <span class="contact__card-data">T.me/telegarm_manzilingiz</span>
+
+                            <a href="#Telegram_manzilingiz" target="_blank" class="contact__button">
+                                Manzil... <i class="bx bx-arrow-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content sc__2">
+                    <h3 class="contact__title">Menga xabaringizni qoldiring.</h3>
+
+
+                    <form action="#" class="contact__form" autocomplete="off" id="contact-form">
+                        <div class="contact__form-div">
+                            <label for="name" class="contact__form-tag">Ism</label>
+                            <input required type="text" name="user_name" class="contact__form-input" placeholder="Ismingiz nima?" id="contact-name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="gmail" class="contact__form-tag">E-mail</label>
+                            <input required type="email" name="user_email" class="contact__form-input" placeholder="Elektron manzilingiz" id="contact-email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="text" class="contact__form-tag">Xabar matni</label>
+                            <textarea required name="user_text" cols="30" rows="10" class="contact__form-input" placeholder="Men uchun qanday xabaringiz bor?" id="contact-project"></textarea>
+                        </div>
+
+                        <button class="button" type="submit">Menga yuboring</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container anmat__bottom">
+            <h1 class="footer__title">MR:Abbos</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">Haqimda</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#testemonak" class="footer__link">Jamoamiz</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="#facebook_manzil" class="footer__social-link">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="#instagram_manzilingiz" class="footer__social-link">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="#twitter_manzilingiz" class="footer__social-link">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">&#169; Developer. All rights reversed</span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!-- ============== Contact Form JS ======= -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>
