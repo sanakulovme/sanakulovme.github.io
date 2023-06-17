@@ -430,6 +430,7 @@ body.light-theme {
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .home__social,
@@ -461,7 +462,7 @@ body.light-theme {
 }
 
 .home__social::after {
-    content: '';
+    content: 'Contact';
     width: 32px;
     height: 2px;
     background: var(--first-color);
