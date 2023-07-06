@@ -16,7 +16,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	min-height: 100vh;
 }
 .container{
 	width: calc(720px * 2);
@@ -236,14 +236,25 @@ input[type=checkbox]:before {
 }
 
 @media screen and (max-width: 768px){
+	.container{
+		width: 100%;
+	}
 	.box__2{
 		background: url(./img/bann2.png) no-repeat;
-	background-size: 100%;
-
+		background-size: 100%;
+		width: 50%;
+	}
+	.box__1{
+		width: 50%;
+		height: 100%;
+	}
+	.logo{
+		top: 30px;
+		left: 20px;
 	}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 425px){
 	.container{
 		flex-direction: column;
 		padding-top: 156px;
@@ -255,10 +266,41 @@ input[type=checkbox]:before {
 		padding-top: 120px;
 	}
 	.box__2{
-		width: 100%;
+		width: 100% !important;
 		height: 273px;
 		background: url(./img/bann3.png) no-repeat;
+		background-size: 100%;
+	}
+	header{
+		height: auto;
+	}
+	.logo{
+		left: -70px;
+		top: -100px;
 	}
 
+}
 
+@media screen and (max-width: 1440px){
+	.box__1,.box__2{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.box__1, .box__2{
+		width: 100%;
+	}
+	.box__1 form{
+		width: 90%;
+	}
+	.up_to a{
+		width: 90%;
+	}
+	.box__2{
+		background-size: auto;
+	}
+	.logo{
+		left: 0;
+	}
 }
