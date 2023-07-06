@@ -6,27 +6,35 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+.logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 header{
-	height: 900px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 .container{
-	width: 100%;
-	height: 900px;
+	width: calc(720px * 2);
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;
-	top: 0;
+	position: relative;
 }
 
 .box__1{
-	width: 50%;
-	height: 100vh;
+	width: 720px;
+	height: 900px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 156px;
+	position: relative;
 }
 
 .box__1 form{
@@ -37,9 +45,10 @@ header{
 	flex-direction: column;
 }
 .box__2{
-	width: 50%;
+	width: 720px;
 	height: 900px;
 	background: url(./img/bann.png) no-repeat;
+
 }
 
 .form__title{
