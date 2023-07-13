@@ -1,0 +1,205 @@
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 90%;
+    }
+    .faq__row,
+    .faq__row-open {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav__menu{
+        display: none;
+    }
+    nav {
+        height: 100px;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+    header .container {
+        position: relative;
+    }
+    /* respons bas */
+    .respons__on,
+    .respons__off {
+        display: flex;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        flex-direction: column;
+    }
+    .respons__on span,
+    .respons__off span {
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    .respons__on span:nth-child(1) {
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        position: absolute;
+    }
+    .respons__on span:nth-child(2) {
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        position: absolute;
+    }
+    /* respons off */
+    .respons__off span:nth-child(1) {
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: 4px;
+    }
+    .respons__off span:nth-child(2) {
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: -8px;
+    }
+    .respons__off span:nth-child(3) {
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: -20px;
+    }
+    .nav__box {
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav__bar {
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav__logo {
+        margin-bottom: 30px;
+    }
+    .nav__item {
+        margin: 10px 0;
+    }
+    .flag {
+        margin: 20px 0;
+    }
+    .project__row {
+        flex-direction: column;
+    }
+    .project__big-col {
+        width: 70%;
+    }
+    .project__big-col .project__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .project__col-desc {
+        text-align: center;
+        text-align-last: center;
+    }
+    .project__btn {
+        margin-bottom: 30px;
+    }
+    .project__pagination {
+        width: 100px;
+        height: auto;
+        margin-top: 30px;
+        flex-direction: row;
+    }
+    .faq__col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    footer {
+        height: auto;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .project__img,
+    .project__col {
+        width: 95%;
+    }
+    .footer__links {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .footer__list {
+        margin: 10px 0;
+    }
+    footer .container {
+        align-items: start;
+    }
+    .footer__socils {
+        margin-top: 20px;
+    }
+    .footer_socail {
+        margin: 0;
+    }
+    .footer_socail:nth-child(2) {
+        margin: 0 20px;
+    }
+    .faq__row,
+    .faq__row-open {
+        width: 100%;
+        height: 100px;
+    }
+    .contact__col {
+        width: 100%;
+    }
+    .contact {
+        padding-left: 0;
+    }
+    .faq__2 .container {
+        justify-content: center;
+    }
+    .fs {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .faq__col-2,
+    .contact__col,
+    .advantage__col,
+    .type__sites-col {
+        width: 95%;
+    }
+    .f__btn{
+        width: 90%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .f__row{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 755px){
+    .type__sites-col{
+        min-height: 684px;
+    }
+}

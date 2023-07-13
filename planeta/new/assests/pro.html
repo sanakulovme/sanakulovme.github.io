@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.b{
+			width: 500px;
+			height: 400px;
+			border: 1px solid #000;
+			position: relative;
+			overflow: hidden;
+		}
+		.o1{
+			width: 100px;
+			height: 10px;
+			background: #000;
+			position: absolute;
+			animation: o1 2s linear infinite;
+		}
+		@keyframes o1 {
+			0%{
+				top: 0;
+				right: 400px;
+			}
+			50%,
+			100%{
+				right: -100px;
+				top: 0;
+			}
+
+		}
+
+		/*@keyframes o {
+			0%{
+				top: 0;
+				right: 400px;
+			}
+			25%{
+				right: 0;
+				top: 0;
+			}
+			50%{
+				right: 0;
+				top: 390px;
+			}
+			75%{
+				right: 400px;
+				top: 390px;
+			}
+			100%{
+				right: 400px;
+				top: 0;
+			}
+		}*/
+	</style>
+</head>
+<body>
+	<div class="b">
+		<div class="o1"></div>
+		<div class="o2"></div>
+		<div class="o3"></div>
+		<div class="o4"></div>
+	</div>
+</body>
+</html>

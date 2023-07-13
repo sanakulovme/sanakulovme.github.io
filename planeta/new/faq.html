@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        .faq__title {
+            color: #000;
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 160%;
+            margin-bottom: 50px;
+        }
+        
+        .faqs {
+            width: 100%;
+        }
+        
+        .faq__row {
+            width: 1200px;
+            height: 87px;
+            overflow: hidden;
+            border-top: 1px solid rgba(157, 157, 157, 1);
+            padding: 27px 27px 27px 0;
+            color: #000;
+            font-size: 20px;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 160%;
+            cursor: pointer;
+        }
+        
+        .faq__row-open {
+            width: 1200px;
+            height: auto;
+            overflow: hidden;
+            border-top: 1px solid rgba(157, 157, 157, 1);
+            padding: 27px 27px 27px 0;
+            color: #000;
+            font-size: 20px;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 160%;
+            cursor: pointer;
+        }
+        
+        .faq__arrow-rotate {
+            transform: rotate(45deg);
+        }
+        
+        .faq__arrow {
+            padding: 10px;
+            border-radius: 50%;
+            position: relative;
+            top: -10px;
+        }
+        
+        .faq__arrow:hover {
+            background: var(--yellow);
+        }
+        
+        .faq__row:hover .faq__arrow {
+            background: var(--yellow);
+        }
+        
+        .fs {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-bottom: 50px;
+        }
+        
+        .faq__row:nth-child(5) {
+            border-bottom: 1px solid rgba(157, 157, 157, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <serction class="faq">
+        <div class="container">
+            <div class="section__title m0">savol javob</div>
+
+            <div class="faq__title">Ko‘p beriladigan savollar</div>
+
+            <div class="faqs">
+                <div class="faq__row" id="faq1" onclick="faqs__fn('f1')">
+                    <div class="fs">
+                        Sayt yaratishga qancha vaqt ketadi?
+                        <img src="./assets/img/plus.svg" alt="" id="fi1" class="faq__arrow">
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis cupiditate consectetur quos? Assumenda obcaecati incidunt voluptas aut nostrum cum quibusdam doloribus illo nobis, architecto culpa omnis ducimus beatae sequi?
+                </div>
+                <div class="faq__row" id="faq2" onclick="faqs__fn('f2')">
+                    <div class="fs">
+                        Sayt bitgandan so‘ng qo‘llab quvvatlab turasizlarmi?
+                        <img src="./assets/img/plus.svg" alt="" id="fi2" class="faq__arrow">
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam suscipit accusantium, ad rerum maiores similique nisi quaerat possimus, temporibus alias officiis nobis blanditiis mollitia? Quibusdam nam et atque itaque dicta?
+                </div>
+                <div class="faq__row" id="faq3" onclick="faqs__fn('f3')">
+                    <div class="fs">
+                        Reklama bilan shug‘ullanasizlarmi
+                        <img src="./assets/img/plus.svg" alt="" id="fi3" class="faq__arrow">
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque recusandae neque voluptas adipisci odit reprehenderit laborum aliquam architecto, culpa in labore nobis ea officiis, rerum quibusdam minus, magni beatae!
+                </div>
+                <div class="faq__row" id="faq4" onclick="faqs__fn('f4')">
+                    <div class="fs">
+                        Nega mijozlar fikri yo‘q?
+                        <img src="./assets/img/plus.svg" alt="" id="fi4" class="faq__arrow">
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates perferendis, ipsum tempore unde error vel accusantium hic, earum corrupti ducimus doloribus a nostrum suscipit dolores rem commodi, explicabo consectetur?
+                </div>
+                <div class="faq__row" id="faq5" onclick="faqs__fn('f5')">
+                    <div class="fs">
+                        Nega narxlar arzon?
+                        <img src="./assets/img/plus.svg" alt="" id="fi5" class="faq__arrow">
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quod architecto. Facere vel, explicabo aperiam vitae perspiciatis aut nisi a temporibus placeat quia fuga deserunt, dignissimos officia. Commodi, odio cum!
+                </div>
+            </div>
+        </div>
+    </serction>
+
+    <script>
+        let faq1 = document.getElementById('faq1'),
+            faq2 = document.getElementById('faq2'),
+            faq3 = document.getElementById('faq3'),
+            faq4 = document.getElementById('faq4'),
+            faq5 = document.getElementById('faq5');
+
+        let fi1 = document.getElementById('fi1'),
+            fi2 = document.getElementById('fi2'),
+            fi3 = document.getElementById('fi3'),
+            fi4 = document.getElementById('fi4'),
+            fi5 = document.getElementById('fi5');
+
+        function faqs__fn(argument) {
+            if (argument == 'f1') {
+                if (faq1.className == 'faq__row') {
+                    fi1.classList.add('faq__arrow-rotate');
+                    faq1.className = 'faq__row-open'
+                    cloesFaq('f1')
+                } else {
+                    fi1.classList.remove('faq__arrow-rotate');
+                    faq1.className = 'faq__row'
+                }
+            } else if (argument == 'f2') {
+                if (faq2.className == 'faq__row') {
+                    fi2.classList.add('faq__arrow-rotate');
+                    faq2.className = 'faq__row-open'
+                    cloesFaq('f2')
+                    fi2.style.transition = 'all 0.3s';
+                } else {
+                    fi2.classList.remove('faq__arrow-rotate');
+                    faq2.className = 'faq__row'
+                }
+            } else if (argument == 'f3') {
+                if (faq3.className == 'faq__row') {
+                    fi3.classList.add('faq__arrow-rotate');
+                    faq3.className = 'faq__row-open'
+                    cloesFaq('f3')
+                    fi3.style.transition = 'all 0.3s';
+                } else {
+                    fi3.classList.remove('faq__arrow-rotate');
+                    faq3.className = 'faq__row'
+                }
+            } else if (argument == 'f4') {
+                if (faq4.className == 'faq__row') {
+                    fi4.classList.add('faq__arrow-rotate');
+                    faq4.className = 'faq__row-open'
+                    cloesFaq('f4')
+                    fi4.style.transition = 'all 0.3s';
+                } else {
+                    fi4.classList.remove('faq__arrow-rotate');
+                    faq4.className = 'faq__row'
+                }
+            } else if (argument == 'f5') {
+                if (faq5.className == 'faq__row') {
+                    fi5.classList.add('faq__arrow-rotate');
+                    faq5.className = 'faq__row-open'
+                    cloesFaq('f5')
+                    fi5.style.transition = 'all 0.3s';
+                } else {
+                    fi5.classList.remove('faq__arrow-rotate');
+                    faq5.className = 'faq__row'
+                }
+            }
+        }
+
+
+        function cloesFaq(argument) {
+            if (argument == 'f1') {
+                faq2.className = 'faq__row';
+                faq3.className = 'faq__row';
+                faq4.className = 'faq__row';
+                faq5.className = 'faq__row';
+
+                fi2.classList.remove('faq__arrow-rotate');
+                fi3.classList.remove('faq__arrow-rotate');
+                fi4.classList.remove('faq__arrow-rotate');
+                fi5.classList.remove('faq__arrow-rotate');
+            } else if (argument == 'f2') {
+                faq1.className = 'faq__row';
+                faq3.className = 'faq__row';
+                faq4.className = 'faq__row';
+                faq5.className = 'faq__row';
+
+                fi1.classList.remove('faq__arrow-rotate');
+                fi3.classList.remove('faq__arrow-rotate');
+                fi4.classList.remove('faq__arrow-rotate');
+                fi5.classList.remove('faq__arrow-rotate');
+            } else if (argument == 'f3') {
+                faq2.className = 'faq__row';
+                faq1.className = 'faq__row';
+                faq4.className = 'faq__row';
+                faq5.className = 'faq__row';
+
+                fi2.classList.remove('faq__arrow-rotate');
+                fi1.classList.remove('faq__arrow-rotate');
+                fi4.classList.remove('faq__arrow-rotate');
+                fi5.classList.remove('faq__arrow-rotate');
+            } else if (argument == 'f4') {
+                faq1.className = 'faq__row';
+                faq2.className = 'faq__row';
+                faq3.className = 'faq__row';
+                faq5.className = 'faq__row';
+
+                fi1.classList.remove('faq__arrow-rotate');
+                fi2.classList.remove('faq__arrow-rotate');
+                fi3.classList.remove('faq__arrow-rotate');
+                fi5.classList.remove('faq__arrow-rotate');
+            } else if (argument == 'f5') {
+                faq1.className = 'faq__row';
+                faq3.className = 'faq__row';
+                faq4.className = 'faq__row';
+                faq2.className = 'faq__row';
+
+                fi1.classList.remove('faq__arrow-rotate');
+                fi3.classList.remove('faq__arrow-rotate');
+                fi4.classList.remove('faq__arrow-rotate');
+                fi2.classList.remove('faq__arrow-rotate');
+            }
+        }
+    </script>
+</body>
+
+</html>

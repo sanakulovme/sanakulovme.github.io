@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #scroller {
+            position: relative;
+            top: 500px;
+            height: 100%;
+            height: 200vh;
+            /* border: 5px dashed orange; */
+        }
+        
+        #output {
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body id="scroller">
+
+    <div id="output">scrollTop: 0</div>
+
+    <script>
+        const scroller = document.querySelector("#scroller");
+        const output = document.querySelector("#output");
+
+        window.addEventListener("scroll", (event) => {
+            output.textContent = `scrollTop: ${scroller.scrollTop}`;
+        });
+    </script>
+
+</body>
+
+</html>
