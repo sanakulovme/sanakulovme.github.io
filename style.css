@@ -87,3 +87,15 @@ nav{
     color: var(--black);
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .portfolio-row{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
