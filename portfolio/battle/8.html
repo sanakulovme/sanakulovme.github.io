@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle 8</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .col{
+            border: 0;
+            background: #6592CF;
+            justify-content: end;
+            flex-direction: column;
+        }
+        .col-3{
+            width: 20px;
+            height: 50px;
+            background: #060F55;
+        }
+        .col-2{
+            width: 150px;
+            height: 100px;
+            background: #060F55;
+            border-radius: 0 0 100px 100px;
+            transform: translateY(1px);
+        }
+
+        .col-1{
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(2px);
+            position: relative;
+            z-index: 9;
+        }
+        .col-4{
+            width: 21px;
+            height: 100px;
+            background: #060F55;
+            border-radius: 21px 21px 0 0;
+        }
+        .col-5{
+            width: 22px;
+            height: 100px;
+            background: #6592CF;
+            border-radius: 0 0 21px 21px;
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="col main-flex">
+        <div class="col-1">
+            <div class="col-4"></div>
+            <div class="col-5"></div>
+            <div class="col-4"></div>
+            <div class="col-5"></div>
+            <div class="col-4"></div>
+            <div class="col-5"></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-3"></div>
+    </div>
+</body>
+</html>
