@@ -111,4 +111,35 @@ nav{
     .navbar a{
       border: 0!important;
     }
+    .content{
+        width: 100%!important;
+    }
   }
+
+.content{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content h1{
+    margin: 20px 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+.content p{
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--black);
+    text-align: center;
+}
