@@ -19,6 +19,6 @@ body {
 
 .main-flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Y */
+    align-items: center; /* X */
 }
